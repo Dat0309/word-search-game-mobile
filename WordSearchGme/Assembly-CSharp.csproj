@@ -54,7 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameUtility.cs" />
+    <Compile Include="Assets\Scripts\ScripableObjects\GameData.cs" />
+    <Compile Include="Assets\Scripts\ScripableObjects\AlphabetData.cs" />
     <Compile Include="Assets\Scripts\ScripableObjects\BoardData.cs" />
+    <Compile Include="Assets\Scripts\WordsGrid.cs" />
+    <Compile Include="Assets\Scripts\GridSquare.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Editor\BoardDataDrawer.cs" />
+    <Compile Include="Assets\Scripts\Editor\AlphabetDataDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
