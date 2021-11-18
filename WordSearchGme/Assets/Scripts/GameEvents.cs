@@ -29,8 +29,11 @@ public static class GameEvents
         }
     }
 
-
-    //*******************************************
+    /// <summary>
+    /// CHU THICH 
+    /// </summary>
+    /// <param name="position"></param>
+    /// 
     public delegate void SelectSquare(Vector3 position);
     public static event SelectSquare OnSelectSquare;
 
@@ -56,8 +59,6 @@ public static class GameEvents
             OnCheckSquare(letter, squarePosition, squareIndex);
         }
     }
-
-
 
     //*******************************************
     // người dùng có thể xóa các mục chọn khi thả chuột ra

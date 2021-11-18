@@ -1,15 +1,22 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class WordChecker : MonoBehaviour
 {
+    /// <summary>
+    /// Định nghĩa dữ liệu hiện tại của màn chơi.
+    /// </summary>
     public GameData currentGameData;
     private string _word;
 
     private int _assignedPoints = 0;
     private int _completeWords = 0;
+    /// <summary>
+    /// Để tượng tác với các vật thể bằng chuột(chạm) 
+    /// cần sử dụng Raycast để phát hiện chúng
+    /// </summary>
     private Ray _rayUp, _rayDown;
     private Ray _rayLeft, _rayRight;
     private Ray _rayDiagonalLeftUp, _rayDiagonalLeftDown;

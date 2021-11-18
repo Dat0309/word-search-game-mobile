@@ -5,7 +5,7 @@ using UnityEngine;
 public class GridSquare : MonoBehaviour
 {
 
-    public int SquareIndex {get;set;}
+    public int SquareIndex { get; set; }
     private AlphabetData.LetterData _normalLetterData;
     private AlphabetData.LetterData _selectedLetterData;
     private AlphabetData.LetterData _correctLetterData;
@@ -38,8 +38,7 @@ public class GridSquare : MonoBehaviour
     private void OnEnable()
     {
         GameEvents.OnEnableSquareSelection += OnEnableSquareSelection;
-        GameEvents.OnDisableSquareSelection +=
-          OnDisableSquareSelection;
+        GameEvents.OnDisableSquareSelection += OnDisableSquareSelection;
         GameEvents.OnSelectSquare += OnSelectSquare;
 
     }
@@ -48,8 +47,7 @@ public class GridSquare : MonoBehaviour
     {
         // hủy đăng kí '-='
         GameEvents.OnEnableSquareSelection -= OnEnableSquareSelection;
-        GameEvents.OnDisableSquareSelection -=
-          OnDisableSquareSelection;
+        GameEvents.OnDisableSquareSelection -= OnDisableSquareSelection;
         GameEvents.OnSelectSquare -= OnSelectSquare;
 
     }
@@ -68,7 +66,8 @@ public class GridSquare : MonoBehaviour
         {
             _displayedImage.sprite = _correctLetterData.image;
 
-        }else
+        }
+        else
         {
             _displayedImage.sprite = _normalLetterData.image;
         }
