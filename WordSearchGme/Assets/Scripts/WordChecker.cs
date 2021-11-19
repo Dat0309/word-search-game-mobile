@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WordChecker : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class WordChecker : MonoBehaviour
     /// Định nghĩa dữ liệu hiện tại của màn chơi.
     /// </summary>
     public GameData currentGameData;
+    public GameLevelData levelData;
     private string _word;
 
     private int _assignedPoints = 0;
@@ -29,12 +31,14 @@ public class WordChecker : MonoBehaviour
     {
         GameEvents.OnCheckSquare += SquareSelected;
         GameEvents.OnClearSelection += ClearSelection;
+        GameEvents.OnLoadNextLevel += LoadNextGameLevel;
     }
 
     private void OnDisable()
     {
         GameEvents.OnCheckSquare += SquareSelected;
         GameEvents.OnClearSelection += ClearSelection;
+        GameEvents.OnLoadNextLevel += LoadNextGameLevel;
     }
 
     private void Start()
@@ -60,6 +64,12 @@ public class WordChecker : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Hàm định nghĩa các hướng được chọn của các từ
+    /// </summary>
+    /// <param name="letter"></param>
+    /// <param name="squarePosition"></param>
+    /// <param name="squareIndex"></param>
     private void SquareSelected(string letter, Vector3 squarePosition, int squareIndex)
     {
         if (_assignedPoints == 0)
@@ -99,7 +109,7 @@ public class WordChecker : MonoBehaviour
     }
 
     /// <summary>
-    /// Hàm thực hiện nhiệm vụ kiểm tra xem từ đã chọn có đúng không
+    /// Hàm kiểm tra từ đã chọn có đúng không
     /// </summary>
     private void CheckWord()
     {
@@ -108,8 +118,10 @@ public class WordChecker : MonoBehaviour
             if (_word == searchingWord.Word)
             {
                 GameEvents.CorrectWordMetod(_word, _correctSquareList);
+                _completeWords++;
                 _word = string.Empty;
                 _correctSquareList.Clear();
+                CheckBoardCompleted();
                 return;
             }
         }
@@ -169,5 +181,78 @@ public class WordChecker : MonoBehaviour
         _assignedPoints = 0;
         _correctSquareList.Clear();
         _word = string.Empty;
+    }
+
+    /// <summary>
+    /// Hàm chuyển sang level tiếp theo
+    /// </summary>
+    private void CheckBoardCompleted()
+    {
+        bool loadNextCat = false;
+        if(currentGameData.selectedBoardData.SearchWords.Count == _completeWords)
+        {
+            //Lưu tiến trình cấp độ chơi lên progresBar
+            var categoryName = currentGameData.selectedCategoryName;
+            var currentBoardIndex = DataSaver.ReadCategoryCurrentIndexValues(categoryName);
+            var nextBoardIndex = -1;
+            var currentCategoryIndex = 0;
+            bool readNextLevelName = false;
+
+            for(int index = 0; index< levelData.data.Count; index++)
+            {
+                if (readNextLevelName)
+                {
+                    nextBoardIndex = DataSaver.ReadCategoryCurrentIndexValues(levelData.data[index].CatName);
+                    readNextLevelName = false;
+                }
+
+                if(levelData.data[index].CatName == categoryName)
+                {
+                    readNextLevelName = true;
+                    currentCategoryIndex = index;
+                }
+            }
+
+            var currentLevelSize = levelData.data[currentCategoryIndex].boardData.Count;
+            if(currentBoardIndex < currentLevelSize)
+            {
+                currentBoardIndex += 1;
+            }
+            DataSaver.SaveCategoryData(categoryName, currentBoardIndex);
+
+            //Unlock Next category
+            if(currentBoardIndex >= currentLevelSize)
+            {
+                currentCategoryIndex++;
+                //Nếu không phải là màn chơi cuối
+                if(currentCategoryIndex < levelData.data.Count)
+                {
+                    categoryName = levelData.data[currentCategoryIndex].CatName;
+                    currentBoardIndex = 0;
+                    loadNextCat = true;
+
+                    if (nextBoardIndex <= 0)
+                        DataSaver.SaveCategoryData(categoryName, currentBoardIndex);
+
+                }
+                else if(currentCategoryIndex == levelData.data.Count)
+                {
+                    SceneManager.LoadScene("SelectCategory");
+                }
+            }
+            else
+            {
+                GameEvents.BoardCompletedMethod();
+            }
+
+            if (loadNextCat)
+            {
+                GameEvents.UnlockNextCategoryMethod();
+            }
+        }
+    }
+    private void LoadNextGameLevel()
+    {
+        SceneManager.LoadScene("GameScene");
     }
 }

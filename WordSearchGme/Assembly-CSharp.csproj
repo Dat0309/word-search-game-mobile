@@ -53,20 +53,21 @@
     <UnityVersion>2020.3.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\DataSaver.cs" />
     <Compile Include="Assets\Scripts\SearchingWordsList.cs" />
     <Compile Include="Assets\Scripts\GameUtility.cs" />
+    <Compile Include="Assets\Scripts\SelectPuzzleButton.cs" />
     <Compile Include="Assets\Scripts\WordChecker.cs" />
+    <Compile Include="Assets\Scripts\GameDataSelector.cs" />
     <Compile Include="Assets\Scripts\WordsGrid.cs" />
     <Compile Include="Assets\Scripts\ScripableObjects\GameData.cs" />
     <Compile Include="Assets\Scripts\ScripableObjects\AlphabetData.cs" />
     <Compile Include="Assets\Scripts\SearchingWords.cs" />
     <Compile Include="Assets\Scripts\GridSquare.cs" />
+    <Compile Include="Assets\Scripts\ScripableObjects\GameLevelData.cs" />
     <Compile Include="Assets\Scripts\ScripableObjects\BoardData.cs" />
     <Compile Include="Assets\Scripts\GameEvents.cs" />
-    <Compile Include="Assets\Scripts\ScripableObjects\GameLevelData.cs" />
-    <Compile Include="Assets\Scripts\SelectPuzzleButton.cs" />
-    <Compile Include="Assets\Scripts\GameDataSelector.cs" />
-    <Compile Include="Assets\Scripts\DataSaver.cs" />
+    <Compile Include="Assets\Scripts\WinPopup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

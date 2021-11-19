@@ -1,0 +1,39 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class WinPopup : MonoBehaviour
+{
+    /// <summary>
+    /// L?p x? lý s? ki?n khi ng??i ch?i th?ng màn ch?i
+    /// </summary>
+
+    public GameObject winPopup;
+    // Start is called before the first frame update
+    void Start()
+    {
+        winPopup.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        GameEvents.OnBoardCompleted += ShowWinPopup;
+    }
+
+    private void OnDisable()
+    {
+        GameEvents.OnBoardCompleted -= ShowWinPopup;
+        
+    }
+
+    private void ShowWinPopup()
+    {
+        winPopup.SetActive(true);
+    }
+
+    public void LoadNextLevel()
+    {
+        GameEvents.LoadNextLevelMethod();
+    }
+}

@@ -88,6 +88,45 @@ public static class GameEvents
         }
     }
 
+    /// <summary>
+    /// Định nghĩa logic tiếp tục màn chơi
+    /// </summary>
+    public delegate void BoardCompleted();
+    public static event BoardCompleted OnBoardCompleted;
 
+    public static void BoardCompletedMethod()
+    {
+        if (OnBoardCompleted != null)
+        {
+            OnBoardCompleted();
+        }
+    }
 
+    /// <summary>
+    /// Định nghĩa logic mở khoa cấp độ tiếp theo
+    /// </summary>
+    public delegate void UnlockNextCategory();
+    public static event UnlockNextCategory OnUnlockNextCategory;
+
+    public static void UnlockNextCategoryMethod()
+    {
+        if (OnUnlockNextCategory != null)
+        {
+            OnUnlockNextCategory();
+        }
+    }
+
+    /// <summary>
+    /// Định nghĩa logic load next level
+    /// </summary>
+    public delegate void LoadNextLevel();
+    public static event LoadNextLevel OnLoadNextLevel;
+
+    public static void LoadNextLevelMethod()
+    {
+        if (OnLoadNextLevel != null)
+        {
+            OnLoadNextLevel();
+        }
+    }
 }
