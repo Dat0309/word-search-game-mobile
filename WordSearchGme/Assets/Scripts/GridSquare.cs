@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -40,7 +41,24 @@ public class GridSquare : MonoBehaviour
         GameEvents.OnEnableSquareSelection += OnEnableSquareSelection;
         GameEvents.OnDisableSquareSelection += OnDisableSquareSelection;
         GameEvents.OnSelectSquare += OnSelectSquare;
+        GameEvents.OnCorrectWord += CorrectWord;
+    }
 
+    /// <summary>
+    /// Chuyển màu của những ô từ đúng thành màu xanh(correctLetterData.image)
+    /// </summary>
+    /// <param name="word">từ ngữ</param>
+    /// <param name="squareIndex">vị trí của các từ</param>
+    private void CorrectWord(string word, List<int> squareIndex)
+    {
+        if(_selected && squareIndex.Contains(_index))
+        {
+            _correct = true;
+            _displayedImage.sprite = _correctLetterData.image;
+
+        }
+        _selected = false;
+        _clicked = false;
     }
 
     private void OnDisable()
@@ -49,7 +67,7 @@ public class GridSquare : MonoBehaviour
         GameEvents.OnEnableSquareSelection -= OnEnableSquareSelection;
         GameEvents.OnDisableSquareSelection -= OnDisableSquareSelection;
         GameEvents.OnSelectSquare -= OnSelectSquare;
-
+        GameEvents.OnCorrectWord -= CorrectWord;
     }
 
     public void OnEnableSquareSelection()

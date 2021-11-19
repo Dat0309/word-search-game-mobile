@@ -72,8 +72,21 @@ public static class GameEvents
             OnClearSelection();
         }
     }
+    /// <summary>
+    /// Định nghĩa logic so sánh từ ngữ
+    /// </summary>
+    /// <param name="word">Từ ngữ so sánh</param>
+    /// <param name="squareIndex">vị trí của các chữ trong từ đó</param>
+    public delegate void CorrectWord(string word, List<int> squareIndex);
+    public static event CorrectWord OnCorrectWord;
 
-
+    public static void CorrectWordMetod(string word, List<int> squareIndex)
+    {
+        if(OnCorrectWord != null)
+        {
+            OnCorrectWord(word, squareIndex);
+        }
+    }
 
 
 

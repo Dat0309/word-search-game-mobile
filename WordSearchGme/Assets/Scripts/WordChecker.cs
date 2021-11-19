@@ -98,13 +98,18 @@ public class WordChecker : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Hàm thực hiện nhiệm vụ kiểm tra xem từ đã chọn có đúng không
+    /// </summary>
     private void CheckWord()
     {
         foreach (var searchingWord in currentGameData.selectedBoardData.SearchWords)
         {
             if (_word == searchingWord.Word)
             {
+                GameEvents.CorrectWordMetod(_word, _correctSquareList);
                 _word = string.Empty;
+                _correctSquareList.Clear();
                 return;
             }
         }

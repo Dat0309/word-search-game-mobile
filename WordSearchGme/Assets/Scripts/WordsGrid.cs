@@ -103,6 +103,7 @@ public class WordsGrid : MonoBehaviour
                         _squareList[_squareList.Count - 1].transform.SetParent(this.transform);
                         _squareList[_squareList.Count - 1].GetComponent<Transform>().position = new Vector3(0f, 0f, 0f);
                         _squareList[_squareList.Count - 1].transform.localScale = squareScale;
+                        _squareList[_squareList.Count - 1].GetComponent<GridSquare>().SetIndex(_squareList.Count - 1);
                     }
                 }
             }
