@@ -55,10 +55,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\UnlockLevelPopup.cs" />
     <Compile Include="Assets\Scripts\DataSaver.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\SearchingWordsList.cs" />
     <Compile Include="Assets\Scripts\CountDownTime.cs" />
     <Compile Include="Assets\Scripts\GameUtility.cs" />
     <Compile Include="Assets\Scripts\SelectPuzzleButton.cs" />
+    <Compile Include="Assets\Scripts\SoundToggleButton.cs" />
     <Compile Include="Assets\Scripts\WordChecker.cs" />
     <Compile Include="Assets\Scripts\GameDataSelector.cs" />
     <Compile Include="Assets\Scripts\WordsGrid.cs" />
@@ -72,8 +74,7 @@
     <Compile Include="Assets\Scripts\GameEvents.cs" />
     <Compile Include="Assets\Scripts\WinPopup.cs" />
     <Compile Include="Assets\Scripts\SettingsScene.cs" />
-    <Compile Include="Assets\Scripts\SoundManager.cs" />
-    <Compile Include="Assets\Scripts\SoundToggleButton.cs" />
+    <Compile Include="Assets\Scripts\Moverment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sounds\Read.txt" />

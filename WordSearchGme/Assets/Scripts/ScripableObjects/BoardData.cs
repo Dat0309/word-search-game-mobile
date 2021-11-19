@@ -7,9 +7,14 @@ using UnityEngine;
 [CreateAssetMenu]
 public class BoardData : ScriptableObject
 {
+    /// <summary>
+    /// Lớp định nghĩa đối tượng bảng
+    /// </summary>
     [System.Serializable]
     public class SearchingWord
     {
+        [HideInInspector]
+        public bool Found = false;
         public string Word;
     }
 
@@ -57,7 +62,16 @@ public class BoardData : ScriptableObject
     public BoardRow[] Board;
     public List<SearchingWord> SearchWords = new List<SearchingWord>();
 
-
+    public void ClearData()
+    {
+        foreach (var word in SearchWords)
+        {
+            word.Found = false;
+        }
+    }
+    /// <summary>
+    /// Xoá trắng bảng
+    /// </summary>
     public void ClearWithEmptyString()
     {
         for(int i=0; i< Columns; i++)
@@ -65,7 +79,10 @@ public class BoardData : ScriptableObject
             Board[i].ClearRow();
         }
     }
-
+    
+    /// <summary>
+    /// Hàm tạo bảng mới
+    /// </summary>
     public void CreateNewBoard()
     {
         Board = new BoardRow[Columns];

@@ -43,6 +43,7 @@ public class WordChecker : MonoBehaviour
 
     private void Start()
     {
+        currentGameData.selectedBoardData.ClearData();
         _assignedPoints = 0;
         _completeWords = 0;
     }
@@ -115,8 +116,9 @@ public class WordChecker : MonoBehaviour
     {
         foreach (var searchingWord in currentGameData.selectedBoardData.SearchWords)
         {
-            if (_word == searchingWord.Word)
+            if (_word == searchingWord.Word && searchingWord.Found == false)
             {
+                searchingWord.Found = true;
                 GameEvents.CorrectWordMetod(_word, _correctSquareList);
                 _completeWords++;
                 _word = string.Empty;
