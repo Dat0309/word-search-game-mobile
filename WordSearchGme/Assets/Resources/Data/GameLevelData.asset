@@ -28,7 +28,7 @@ MonoBehaviour:
   - CatName: Toys
     boardData:
     - {fileID: 11400000, guid: bbf95dd71df0842449d2eae45833554e, type: 2}
-  - CatName: Works
+  - CatName: Work
     boardData:
     - {fileID: 11400000, guid: 9846470e9b452b542a48f5b9b64f20e3, type: 2}
   - CatName: Sport

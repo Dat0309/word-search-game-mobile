@@ -53,8 +53,10 @@
     <UnityVersion>2020.3.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\UnlockLevelPopup.cs" />
     <Compile Include="Assets\Scripts\DataSaver.cs" />
     <Compile Include="Assets\Scripts\SearchingWordsList.cs" />
+    <Compile Include="Assets\Scripts\CountDownTime.cs" />
     <Compile Include="Assets\Scripts\GameUtility.cs" />
     <Compile Include="Assets\Scripts\SelectPuzzleButton.cs" />
     <Compile Include="Assets\Scripts\WordChecker.cs" />
@@ -65,11 +67,16 @@
     <Compile Include="Assets\Scripts\SearchingWords.cs" />
     <Compile Include="Assets\Scripts\GridSquare.cs" />
     <Compile Include="Assets\Scripts\ScripableObjects\GameLevelData.cs" />
+    <Compile Include="Assets\Scripts\GameOverPopup.cs" />
     <Compile Include="Assets\Scripts\ScripableObjects\BoardData.cs" />
     <Compile Include="Assets\Scripts\GameEvents.cs" />
     <Compile Include="Assets\Scripts\WinPopup.cs" />
-    <Compile Include="Assets\Scripts\CountDownTime.cs" />
-    <Compile Include="Assets\Scripts\GameOverPopup.cs" />
+    <Compile Include="Assets\Scripts\SettingsScene.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\SoundToggleButton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Sounds\Read.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

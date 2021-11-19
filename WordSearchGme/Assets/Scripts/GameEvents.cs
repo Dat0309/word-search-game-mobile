@@ -142,4 +142,18 @@ public static class GameEvents
             OnGameOver();
         }
     }
+
+    /// <summary>
+    /// Định nghĩa logic điều chỉnh âm thanh game
+    /// </summary>
+    public delegate void ToggleSoundFX();
+    public static event ToggleSoundFX OnToggleSoundFX;
+
+    public static void OnToggleSoundFXMethod()
+    {
+        if (OnToggleSoundFX != null)
+        {
+            OnToggleSoundFX();
+        }
+    }
 }
