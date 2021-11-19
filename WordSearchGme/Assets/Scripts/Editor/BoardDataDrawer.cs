@@ -31,6 +31,9 @@ public class BoardDataDrawer : Editor
     public override void OnInspectorGUI()
     {
         serializedObject.Update();
+
+        GameDataInstance.timeInSeconds = EditorGUILayout.FloatField("Max Game Time (in Seconds)", GameDataInstance.timeInSeconds);
+
         DrawColumsRowsInputFields();
         EditorGUILayout.Space();
         ConvertToUpperButton();
@@ -144,7 +147,7 @@ public class BoardDataDrawer : Editor
         };
     }
 
-    // Chuyển tất cả các chữ thành upper case
+    // Chuyển tất cả các chữ cái thành upper case
     private void ConvertToUpperButton()
     {
         if (GUILayout.Button("To Upper"))
@@ -189,7 +192,7 @@ public class BoardDataDrawer : Editor
         }
     }
 
-    // Thêm random vào bảng
+    // Thêm random các chữ cái vào bảng vào bảng
     private void FillUpWithRandomLetterButton()
     {
         if(GUILayout.Button("Fill Up With Random"))

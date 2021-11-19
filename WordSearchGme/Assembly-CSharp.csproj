@@ -68,6 +68,8 @@
     <Compile Include="Assets\Scripts\ScripableObjects\BoardData.cs" />
     <Compile Include="Assets\Scripts\GameEvents.cs" />
     <Compile Include="Assets\Scripts\WinPopup.cs" />
+    <Compile Include="Assets\Scripts\CountDownTime.cs" />
+    <Compile Include="Assets\Scripts\GameOverPopup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
