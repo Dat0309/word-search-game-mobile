@@ -1,9 +1,10 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SearchingWordsList : MonoBehaviour
 {
+    // Lớp các từ đề cho, hiện bên dưới bảng chữ chọn
     public GameData currentGameData;
     public GameObject searchingWordPrefab;
     public float offset = 0.0f;

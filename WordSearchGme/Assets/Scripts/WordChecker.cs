@@ -139,6 +139,8 @@ public class WordChecker : MonoBehaviour
         }
         return false;
     }
+
+    //trả về hướng người dùng kéo chọn
     private Ray SelectRay(Vector2 firstPosition, Vector2 secondPosition)
     {
         var direction = (secondPosition - firstPosition).normalized;
@@ -177,6 +179,8 @@ public class WordChecker : MonoBehaviour
         }
         return _rayDown;
     }
+
+    //hàm xóa lựa chọn
 
     private void ClearSelection()
     {
