@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public static class GameEvents 
+
+    // lớp sự kiện trong game
 {
     public delegate void EnabelSquareSelection();
     public static event EnabelSquareSelection OnEnableSquareSelection;
@@ -16,13 +18,14 @@ public static class GameEvents
         }
     }
 
+    //sự kiện hình vuông được gọi khi tắt
     //*******************************************
     public delegate void DisableSquareSelection();
     public static event DisableSquareSelection OnDisableSquareSelection;
 
     public static void DisableSquareSelectionMethod()
     {
-        
+        //lựa chọn ô vuông không bị vô hiệu hóa
         if (OnDisableSquareSelection != null)
         {
             OnDisableSquareSelection();
@@ -30,9 +33,9 @@ public static class GameEvents
     }
 
     /// <summary>
-    /// CHU THICH 
+    /// chọn hình vuông
     /// </summary>
-    /// <param name="position"></param>
+    /// <param name="position"> tọa độ của hình vuông được chọn (x,y,z) </param>
     /// 
     public delegate void SelectSquare(Vector3 position);
     public static event SelectSquare OnSelectSquare;
@@ -61,7 +64,7 @@ public static class GameEvents
     }
 
     //*******************************************
-    // người dùng có thể xóa các mục chọn khi thả chuột ra
+    // có thể xóa các mục chọn khi thả chuột ra
     public delegate void ClearSelection();
     public static event ClearSelection OnClearSelection;
 
