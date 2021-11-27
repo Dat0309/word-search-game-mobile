@@ -52,6 +52,7 @@ public class UnlockLevelPopup : MonoBehaviour
             }
 
             winPopup.SetActive(true);
+            SoundManager.instance.PlayWinSound();
         }
     }
 }

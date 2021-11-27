@@ -31,5 +31,6 @@ public class GameOverPopup : MonoBehaviour
     {
         gameOverPopup.SetActive(true);
         continueGameAfterAdsButton.GetComponent<Button>().interactable=false;
+        SoundManager.instance.PlayLoseSound();
     }
 }

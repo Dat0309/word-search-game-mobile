@@ -63,6 +63,9 @@ public class SearchingWordsList : MonoBehaviour
         return true;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     private void CreateWordObjects()
     {
         var squareScale = GetSquareScale(new Vector3(1f, 1f, 0.1f));

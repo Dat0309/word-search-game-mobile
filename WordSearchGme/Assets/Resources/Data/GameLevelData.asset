@@ -22,6 +22,7 @@ MonoBehaviour:
   - CatName: Animal
     boardData:
     - {fileID: 11400000, guid: d2e9ca35139ec44488931a352fe8a5c3, type: 2}
+    - {fileID: 11400000, guid: cb1dba19bd34f3f4eae550fbb85d6562, type: 2}
   - CatName: Plants
     boardData:
     - {fileID: 11400000, guid: f9390b68fb9632946a73b08f812577d5, type: 2}

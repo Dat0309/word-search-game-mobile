@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a94c1ec15fdc14a81751529d5b4f68, type: 3}
+  m_Name: Animals2
+  m_EditorClassIdentifier: 
+  timeInSeconds: 450
+  Columns: 10
+  Rows: 10
+  Board:
+  - Size: 10
+    Row:
+    - A
+    - W
+    - W
+    - Z
+    - L
+    - R
+    - M
+    - A
+    - B
+    - A
+  - Size: 10
+    Row:
+    - X
+    - C
+    - M
+    - B
+    - Z
+    - L
+    - N
+    - V
+    - H
+    - G
+  - Size: 10
+    Row:
+    - G
+    - B
+    - R
+    - N
+    - C
+    - V
+    - H
+    - Y
+    - O
+    - A
+  - Size: 10
+    Row:
+    - M
+    - Q
+    - W
+    - J
+    - A
+    - T
+    - F
+    - G
+    - V
+    - K
+  - Size: 10
+    Row:
+    - X
+    - E
+    - M
+    - E
+    - T
+    - D
+    - I
+    - U
+    - N
+    - H
+  - Size: 10
+    Row:
+    - O
+    - D
+    - O
+    - G
+    - Z
+    - M
+    - S
+    - W
+    - G
+    - G
+  - Size: 10
+    Row:
+    - O
+    - D
+    - F
+    - S
+    - V
+    - Y
+    - H
+    - R
+    - S
+    - M
+  - Size: 10
+    Row:
+    - V
+    - L
+    - C
+    - X
+    - D
+    - I
+    - S
+    - Y
+    - Z
+    - W
+  - Size: 10
+    Row:
+    - N
+    - C
+    - G
+    - Q
+    - R
+    - I
+    - V
+    - T
+    - A
+    - F
+  - Size: 10
+    Row:
+    - G
+    - G
+    - L
+    - F
+    - K
+    - T
+    - A
+    - J
+    - M
+    - F
+  SearchWords:
+  - Found: 0
+    Word: CAT
+  - Found: 0
+    Word: DOG
+  - Found: 0
+    Word: FISH

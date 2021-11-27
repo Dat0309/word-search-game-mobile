@@ -14,6 +14,8 @@ public class SoundManager : MonoBehaviour
     private bool _muteBackgroundMusic = false;
     private bool _muteSoundFx = false;
     public static SoundManager instance;
+    public AudioClip winSound;
+    public AudioClip loseSound;
 
     private AudioSource _audioSource;
     private void Awake()
@@ -75,5 +77,28 @@ public class SoundManager : MonoBehaviour
             }
             else _audioSource.volume = 1f;
         }
+    }
+
+    public void PlaySound(AudioClip sound)
+    {
+        if(_audioSource && sound)
+            _audioSource.PlayOneShot(sound);
+
+    }
+
+    /// <summary>
+    /// Phát nhạc khi thua
+    /// </summary>
+    public void PlayWinSound()
+    {
+        PlaySound(winSound);
+    }
+
+    /// <summary>
+    /// Phát nhạc khi thắng
+    /// </summary>
+    public void PlayLoseSound()
+    {
+        PlaySound(loseSound);
     }
 }

@@ -12,134 +12,140 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a94c1ec15fdc14a81751529d5b4f68, type: 3}
   m_Name: Food1
   m_EditorClassIdentifier: 
-  timeInSeconds: 200
+  timeInSeconds: 500
   Columns: 10
   Rows: 10
   Board:
   - Size: 10
     Row:
-    - X
-    - P
-    - O
-    - T
-    - X
-    - I
-    - Q
-    - Q
-    - Q
-    - R
-  - Size: 10
-    Row:
+    - S
+    - G
+    - S
     - N
     - O
     - O
     - D
     - L
     - E
-    - Y
-    - H
-    - E
-    - O
+    - X
   - Size: 10
     Row:
+    - U
+    - G
+    - I
+    - W
+    - Z
+    - A
+    - U
+    - P
+    - U
+    - W
+  - Size: 10
+    Row:
+    - G
+    - O
+    - T
     - S
-    - R
-    - L
-    - I
-    - I
-    - L
-    - F
-    - Q
-    - J
+    - E
+    - H
+    - V
+    - T
+    - B
     - G
   - Size: 10
     Row:
-    - T
-    - K
-    - O
-    - H
-    - B
+    - A
+    - U
+    - A
+    - A
+    - P
+    - E
     - V
     - P
-    - Y
+    - W
+    - L
+  - Size: 10
+    Row:
+    - R
+    - F
+    - S
+    - L
     - U
+    - H
+    - T
+    - F
     - N
-  - Size: 10
-    Row:
-    - W
-    - G
-    - V
-    - C
-    - R
     - Y
-    - X
-    - X
-    - I
-    - J
   - Size: 10
     Row:
-    - G
-    - F
-    - H
-    - P
-    - E
-    - D
-    - U
-    - I
-    - C
-    - C
-  - Size: 10
-    Row:
-    - P
-    - I
-    - Z
-    - Z
-    - A
-    - G
-    - P
+    - T
+    - O
+    - T
+    - T
     - R
+    - N
+    - O
+    - Q
     - E
-    - S
-  - Size: 10
-    Row:
-    - B
-    - Z
-    - L
-    - J
-    - D
-    - S
-    - F
-    - J
-    - K
-    - T
-  - Size: 10
-    Row:
-    - A
-    - A
-    - L
-    - Z
-    - W
-    - L
-    - T
-    - E
-    - H
     - X
   - Size: 10
     Row:
-    - I
-    - T
-    - G
-    - O
+    - L
     - U
-    - P
-    - K
+    - Y
     - A
+    - I
+    - K
+    - K
+    - U
     - O
+    - Z
+  - Size: 10
+    Row:
+    - K
     - H
+    - K
+    - E
+    - V
+    - E
+    - X
+    - T
+    - C
+    - S
+  - Size: 10
+    Row:
+    - R
+    - R
+    - P
+    - J
+    - U
+    - I
+    - C
+    - E
+    - X
+    - L
+  - Size: 10
+    Row:
+    - S
+    - X
+    - I
+    - X
+    - Z
+    - Q
+    - G
+    - Q
+    - N
+    - A
   SearchWords:
-  - Word: BREAD
-  - Word: PIZZA
-  - Word: PASTA
-  - Word: NOODLE
-  - Word: QQQ
-  - Word: JUICE
+  - Found: 0
+    Word: SUGAR
+  - Found: 0
+    Word: SALT
+  - Found: 0
+    Word: TASTY
+  - Found: 0
+    Word: NOODLE
+  - Found: 0
+    Word: SWEET
+  - Found: 0
+    Word: JUICE

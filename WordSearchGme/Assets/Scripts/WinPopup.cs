@@ -32,6 +32,7 @@ public class WinPopup : MonoBehaviour
     private void ShowWinPopup()
     {
         winPopup.SetActive(true);
+        SoundManager.instance.PlayWinSound();
     }
 
     public void LoadNextLevel()

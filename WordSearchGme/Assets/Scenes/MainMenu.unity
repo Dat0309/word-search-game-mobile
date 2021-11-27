@@ -660,6 +660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbfbd05e6fa87cb459c006c4466b5781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winSound: {fileID: 8300000, guid: e7a8987a33e38fa4a933a39dacd5d505, type: 3}
+  loseSound: {fileID: 8300000, guid: 701bc6ba646f09a45a521a6083dde87d, type: 3}
 --- !u!4 &552811725
 Transform:
   m_ObjectHideFlags: 0
