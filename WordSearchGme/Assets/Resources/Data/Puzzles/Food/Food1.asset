@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a94c1ec15fdc14a81751529d5b4f68, type: 3}
   m_Name: Food1
   m_EditorClassIdentifier: 
-  timeInSeconds: 500
+  timeInSeconds: 200
   Columns: 10
   Rows: 10
   Board:
@@ -137,15 +137,15 @@ MonoBehaviour:
     - N
     - A
   SearchWords:
-  - Found: 0
+  - Found: 1
     Word: SUGAR
-  - Found: 0
+  - Found: 1
     Word: SALT
-  - Found: 0
+  - Found: 1
     Word: TASTY
-  - Found: 0
+  - Found: 1
     Word: NOODLE
-  - Found: 0
+  - Found: 1
     Word: SWEET
-  - Found: 0
+  - Found: 1
     Word: JUICE
