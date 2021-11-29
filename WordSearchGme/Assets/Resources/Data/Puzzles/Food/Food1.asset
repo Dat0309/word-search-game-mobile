@@ -18,134 +18,146 @@ MonoBehaviour:
   Board:
   - Size: 10
     Row:
-    - S
-    - G
-    - S
+    - B
     - N
+    - S
+    - P
+    - R
+    - M
+    - M
+    - M
     - O
+    - B
+  - Size: 10
+    Row:
+    - R
     - O
+    - U
+    - E
+    - I
+    - E
+    - I
+    - G
+    - E
+    - M
+  - Size: 10
+    Row:
+    - E
+    - O
+    - G
+    - P
+    - C
+    - A
+    - L
+    - I
+    - D
+    - D
+  - Size: 10
+    Row:
+    - A
+    - D
+    - G
+    - P
+    - E
+    - T
+    - K
+    - D
+    - Q
+    - Q
+  - Size: 10
+    Row:
     - D
     - L
-    - E
-    - X
-  - Size: 10
-    Row:
-    - U
-    - G
-    - I
-    - W
-    - Z
     - A
-    - U
-    - P
-    - U
-    - W
-  - Size: 10
-    Row:
-    - G
-    - O
-    - T
-    - S
     - E
-    - H
-    - V
-    - T
+    - K
     - B
-    - G
-  - Size: 10
-    Row:
-    - A
-    - U
-    - A
-    - A
-    - P
-    - E
-    - V
-    - P
-    - W
-    - L
-  - Size: 10
-    Row:
-    - R
-    - F
-    - S
-    - L
-    - U
-    - H
-    - T
-    - F
-    - N
-    - Y
-  - Size: 10
-    Row:
-    - T
-    - O
-    - T
-    - T
-    - R
-    - N
-    - O
     - Q
-    - E
-    - X
-  - Size: 10
-    Row:
-    - L
-    - U
-    - Y
-    - A
-    - I
-    - K
-    - K
-    - U
-    - O
-    - Z
-  - Size: 10
-    Row:
-    - K
-    - H
-    - K
-    - E
-    - V
-    - E
-    - X
-    - T
-    - C
-    - S
-  - Size: 10
-    Row:
-    - R
-    - R
-    - P
     - J
-    - U
-    - I
-    - C
-    - E
-    - X
-    - L
+    - A
+    - H
   - Size: 10
     Row:
     - S
-    - X
-    - I
-    - X
+    - E
+    - R
+    - R
+    - H
+    - H
     - Z
-    - Q
-    - G
-    - Q
+    - H
+    - L
+    - L
+  - Size: 10
+    Row:
+    - A
+    - T
     - N
+    - X
+    - Y
+    - C
+    - L
+    - K
+    - F
+    - W
+  - Size: 10
+    Row:
+    - L
+    - F
+    - C
+    - K
+    - T
+    - X
+    - L
+    - X
+    - C
+    - B
+  - Size: 10
+    Row:
+    - T
+    - T
+    - D
+    - R
+    - Z
+    - P
+    - X
+    - M
+    - O
+    - J
+  - Size: 10
+    Row:
+    - B
+    - P
+    - D
+    - Y
+    - A
+    - P
+    - N
+    - S
+    - L
     - A
   SearchWords:
   - Found: 1
-    Word: SUGAR
-  - Found: 1
-    Word: SALT
-  - Found: 1
-    Word: TASTY
-  - Found: 1
+    Word: BREAD
+    WordValue: "B\xE1nh m\xEC"
+  - Found: 0
     Word: NOODLE
-  - Found: 1
-    Word: SWEET
-  - Found: 1
-    Word: JUICE
+    WordValue: "M\xEC"
+  - Found: 0
+    Word: SALT
+    WordValue: "Mu\u1ED1i"
+  - Found: 0
+    Word: SUGGAR
+    WordValue: "\u0110\u01B0\u1EDDng"
+  - Found: 0
+    Word: PEPPER
+    WordValue: "Ti\xEAu"
+  - Found: 0
+    Word: RICE
+    WordValue: "C\u01A1m"
+  - Found: 0
+    Word: MEAT
+    WordValue: "Th\u1ECBt"
+  - Found: 0
+    Word: MILK
+    WordValue: "S\u1EEFa"

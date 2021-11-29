@@ -143,6 +143,8 @@ public class BoardDataDrawer : Editor
 
             EditorGUI.PropertyField(new Rect(rect.x, rect.y, EditorGUIUtility.labelWidth, EditorGUIUtility.singleLineHeight),
                 element.FindPropertyRelative("Word"), GUIContent.none);
+            EditorGUI.PropertyField(new Rect(rect.x + 230, rect.y, EditorGUIUtility.labelWidth, EditorGUIUtility.singleLineHeight),
+                element.FindPropertyRelative("WordValue"), GUIContent.none);
 
         };
     }

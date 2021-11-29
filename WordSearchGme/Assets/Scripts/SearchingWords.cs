@@ -13,6 +13,7 @@ public class SearchingWords : MonoBehaviour
     public Image crossLine;
 
     private string _word;
+    private string _wordValue;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,10 +37,11 @@ public class SearchingWords : MonoBehaviour
         GameEvents.OnCorrectWord -= CorrectWord; 
     }
 
-    public void SetWord(string word)
+    public void SetWord(string word, string wordValue)
     {
         _word = word;
-        displayedText.text = _word;
+        _wordValue = wordValue;
+        displayedText.text = _wordValue;
     }
 
     /// <summary>

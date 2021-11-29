@@ -12,144 +12,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a94c1ec15fdc14a81751529d5b4f68, type: 3}
   m_Name: Food2
   m_EditorClassIdentifier: 
-  timeInSeconds: 150
-  Columns: 10
-  Rows: 10
+  timeInSeconds: 80
+  Columns: 5
+  Rows: 5
   Board:
-  - Size: 10
+  - Size: 5
     Row:
     - B
-    - A
-    - K
-    - E
-    - H
-    - I
-    - L
-    - A
-    - X
-    - I
-  - Size: 10
-    Row:
-    - G
-    - L
-    - T
-    - H
-    - J
-    - E
-    - G
-    - G
-    - E
-    - U
-  - Size: 10
-    Row:
-    - E
-    - P
-    - A
-    - C
-    - N
-    - P
-    - U
-    - E
-    - J
-    - H
-  - Size: 10
-    Row:
-    - E
-    - C
-    - D
-    - N
-    - T
-    - C
-    - E
-    - I
-    - P
-    - I
-  - Size: 10
-    Row:
-    - S
-    - O
-    - M
     - Y
-    - D
-    - X
-    - N
-    - P
-    - E
-    - S
-  - Size: 10
-    Row:
-    - H
-    - O
-    - F
-    - L
-    - O
-    - U
-    - R
     - G
-    - P
-    - R
-  - Size: 10
-    Row:
-    - R
-    - K
-    - N
+    - J
     - T
-    - I
-    - X
-    - C
-    - V
-    - E
-    - E
-  - Size: 10
+  - Size: 5
     Row:
-    - S
-    - W
-    - V
+    - E
+    - A
+    - L
+    - H
     - D
-    - L
-    - P
-    - Q
-    - L
-    - R
-    - E
-  - Size: 10
+  - Size: 5
     Row:
-    - Y
+    - E
+    - K
     - B
-    - R
-    - E
     - A
-    - D
-    - C
-    - Y
+    - R
+  - Size: 5
+    Row:
     - F
-    - I
-  - Size: 10
+    - F
+    - D
+    - L
+    - R
+  - Size: 5
     Row:
     - P
-    - T
-    - U
-    - R
-    - T
     - O
-    - G
-    - M
-    - F
-    - X
+    - R
+    - K
+    - Z
   SearchWords:
-  - Found: 1
-    Word: BLAND
-  - Found: 1
-    Word: OIL
-  - Found: 1
-    Word: EGG
-  - Found: 1
-    Word: FLOUR
-  - Found: 1
-    Word: COOK
-  - Found: 1
-    Word: PEPER
-  - Found: 1
-    Word: BREAD
-  - Found: 1
-    Word: BAKE
+  - Found: 0
+    Word: BEEF
+    WordValue: "Th\u1ECBt b\xF2"
+  - Found: 0
+    Word: PORK
+    WordValue: "Th\u1ECBt heo"

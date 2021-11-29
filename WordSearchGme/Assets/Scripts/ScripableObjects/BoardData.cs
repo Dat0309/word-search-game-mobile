@@ -16,6 +16,7 @@ public class BoardData : ScriptableObject
         [HideInInspector]
         public bool Found = false;
         public string Word;
+        public string WordValue;
     }
 
     /*
