@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a94c1ec15fdc14a81751529d5b4f68, type: 3}
   m_Name: Food1
   m_EditorClassIdentifier: 
-  timeInSeconds: 200
+  timeInSeconds: 15
   Columns: 10
   Rows: 10
   Board:
@@ -140,24 +140,24 @@ MonoBehaviour:
   - Found: 1
     Word: BREAD
     WordValue: "B\xE1nh m\xEC"
-  - Found: 0
+  - Found: 1
     Word: NOODLE
     WordValue: "M\xEC"
-  - Found: 0
+  - Found: 1
     Word: SALT
     WordValue: "Mu\u1ED1i"
-  - Found: 0
+  - Found: 1
     Word: SUGGAR
     WordValue: "\u0110\u01B0\u1EDDng"
-  - Found: 0
+  - Found: 1
     Word: PEPPER
     WordValue: "Ti\xEAu"
-  - Found: 0
+  - Found: 1
     Word: RICE
     WordValue: "C\u01A1m"
-  - Found: 0
+  - Found: 1
     Word: MEAT
     WordValue: "Th\u1ECBt"
-  - Found: 0
+  - Found: 1
     Word: MILK
     WordValue: "S\u1EEFa"

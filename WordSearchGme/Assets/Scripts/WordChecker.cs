@@ -261,4 +261,6 @@ public class WordChecker : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
+
+    
 }

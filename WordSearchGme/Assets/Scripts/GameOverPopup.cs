@@ -11,14 +11,18 @@ public class GameOverPopup : MonoBehaviour
     /// </summary>
 
     public GameObject gameOverPopup;
-    public GameObject continueGameAfterAdsButton;
+    public GameObject playAgain;
 
     // Start is called before the first frame update
     void Start()
     {
-        continueGameAfterAdsButton.GetComponent<Button>().interactable = false;
+        playAgain.GetComponent<Button>().interactable = false;
         gameOverPopup.SetActive(false);
 
+       
+    }
+    private void OnEnable()
+    {
         GameEvents.OnGameOver += ShowGameOverPopup;
     }
 
@@ -30,7 +34,12 @@ public class GameOverPopup : MonoBehaviour
     private void ShowGameOverPopup()
     {
         gameOverPopup.SetActive(true);
-        continueGameAfterAdsButton.GetComponent<Button>().interactable=false;
+        playAgain.GetComponent<Button>().interactable=false;
         SoundManager.instance.PlayLoseSound();
+    }
+
+    public void LoadAgain()
+    {
+        GameEvents.LoadNextLevelMethod();
     }
 }
