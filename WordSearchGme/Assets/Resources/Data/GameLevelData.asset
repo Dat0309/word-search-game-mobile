@@ -16,7 +16,7 @@ MonoBehaviour:
   - CatName: Food
     boardData:
     - {fileID: 11400000, guid: 59cf783e8a7c5ea40969c5909c6a127f, type: 2}
-    - {fileID: 11400000, guid: f4071d7e8ca3d324d95897afa9408bed, type: 2}
+    - {fileID: 11400000, guid: e01679d9e66354f43a96c83a3512a3b7, type: 2}
     - {fileID: 11400000, guid: 3f4e7f3ea68170a4281daca0bee09905, type: 2}
   - CatName: Animal
     boardData:

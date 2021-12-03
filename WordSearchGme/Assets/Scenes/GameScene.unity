@@ -1002,7 +1002,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverPopup: {fileID: 449001947}
-  playAgain: {fileID: 0}
 --- !u!1 &526349554
 GameObject:
   m_ObjectHideFlags: 0
