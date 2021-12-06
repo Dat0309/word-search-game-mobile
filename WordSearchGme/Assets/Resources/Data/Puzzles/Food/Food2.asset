@@ -18,39 +18,39 @@ MonoBehaviour:
   Board:
   - Size: 5
     Row:
+    - S
+    - C
     - B
     - Y
-    - G
-    - J
-    - T
-  - Size: 5
-    Row:
-    - E
-    - A
-    - L
-    - H
-    - D
-  - Size: 5
-    Row:
-    - E
-    - K
-    - B
-    - A
-    - R
-  - Size: 5
-    Row:
-    - F
-    - F
-    - D
-    - L
-    - R
+    - P
   - Size: 5
     Row:
     - P
     - O
     - R
     - K
+    - A
+  - Size: 5
+    Row:
+    - H
+    - R
+    - E
+    - W
+    - K
+  - Size: 5
+    Row:
     - Z
+    - R
+    - F
+    - T
+    - P
+  - Size: 5
+    Row:
+    - Y
+    - M
+    - T
+    - I
+    - O
   SearchWords:
   - Found: 0
     Word: BEEF

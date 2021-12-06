@@ -20,7 +20,7 @@ public class BoardDataDrawer : Editor
 
     private void OnEnable()
     {
-        
+
     }
 
     /*Ghi đè phương thức OnInspectorGUI để hiển thị tất cả những biến và nút ở trên, việc này giúp tạo ra 1 setting
@@ -44,6 +44,7 @@ public class BoardDataDrawer : Editor
         GUILayout.BeginHorizontal();
         ClearBoardButton();
         FillUpWithRandomLetterButton();
+        FillKeyUpWithRandomLetterButton();
 
         GUILayout.EndHorizontal();
 
@@ -68,7 +69,7 @@ public class BoardDataDrawer : Editor
         GameDataInstance.Columns = EditorGUILayout.IntField("Columns", GameDataInstance.Columns);
         GameDataInstance.Rows = EditorGUILayout.IntField("Rows", GameDataInstance.Rows);
 
-        if((GameDataInstance.Columns != columnsTemp || GameDataInstance.Rows != rowsTemp)
+        if ((GameDataInstance.Columns != columnsTemp || GameDataInstance.Rows != rowsTemp)
             && GameDataInstance.Columns > 0
             && GameDataInstance.Rows > 0)
         {
@@ -103,17 +104,17 @@ public class BoardDataDrawer : Editor
 
         // Vẽ hàng ngang
         EditorGUILayout.BeginHorizontal(tableStyle);
-        for(var x = 0; x < GameDataInstance.Columns; x++)
+        for (var x = 0; x < GameDataInstance.Columns; x++)
         {
             // Vẽ hàng dọc
             EditorGUILayout.BeginVertical(x == -1 ? headerColumnStyle : columnStyle);
-            for(var y = 0; y < GameDataInstance.Rows; y++)
+            for (var y = 0; y < GameDataInstance.Rows; y++)
             {
-                if(x >= 0 && y >= 0)
+                if (x >= 0 && y >= 0)
                 {
                     EditorGUILayout.BeginHorizontal(rowStyle);
-                    var character = (string)EditorGUILayout.TextArea(GameDataInstance.Board[x].Row[y],textFieldStyle);
-                    if(GameDataInstance.Board[x].Row[y].Length > 1)
+                    var character = (string)EditorGUILayout.TextArea(GameDataInstance.Board[x].Row[y], textFieldStyle);
+                    if (GameDataInstance.Board[x].Row[y].Length > 1)
                     {
                         character = GameDataInstance.Board[x].Row[y].Substring(0, 1);
                     }
@@ -182,11 +183,11 @@ public class BoardDataDrawer : Editor
     // Xoá bảng
     private void ClearBoardButton()
     {
-        if(GUILayout.Button("Clear Board"))
+        if (GUILayout.Button("Clear Board"))
         {
-            for(int i = 0; i < GameDataInstance.Columns; i++)
+            for (int i = 0; i < GameDataInstance.Columns; i++)
             {
-                for(int j = 0; j < GameDataInstance.Rows; j++)
+                for (int j = 0; j < GameDataInstance.Rows; j++)
                 {
                     GameDataInstance.Board[i].Row[j] = "";
                 }
@@ -197,17 +198,17 @@ public class BoardDataDrawer : Editor
     // Thêm random các chữ cái vào bảng vào bảng
     private void FillUpWithRandomLetterButton()
     {
-        if(GUILayout.Button("Fill Up With Random"))
+        if (GUILayout.Button("Fill Up With Random"))
         {
-            for(int i=0;i<GameDataInstance.Columns; i++)
+            for (int i = 0; i < GameDataInstance.Columns; i++)
             {
-                for(int j = 0; j < GameDataInstance.Rows; j++)
+                for (int j = 0; j < GameDataInstance.Rows; j++)
                 {
                     int errorCounter = Regex.Matches(GameDataInstance.Board[i].Row[j], @"[a-zA-Z]").Count;
                     string letters = "QWERTYUIOPLKJHGFDSAZXCVBNM";
                     int index = UnityEngine.Random.Range(0, letters.Length);
 
-                    if(errorCounter == 0)
+                    if (errorCounter == 0)
                     {
                         GameDataInstance.Board[i].Row[j] = letters[index].ToString();
                     }
@@ -215,4 +216,252 @@ public class BoardDataDrawer : Editor
             }
         }
     }
+
+    // Thêm random các từ khoá vào bảng vào bảng
+    private void FillKeyUpWithRandomLetterButton()
+    {
+        char[,] newGrid = new char[GameDataInstance.Rows, GameDataInstance.Columns];
+
+        if (GUILayout.Button("Fill Key Up With Random"))
+        {
+            foreach (var word in GameDataInstance.SearchWords)
+            {
+                //for (int i = 0; i < word.Word.Length; i++)
+                //{
+                bool canPlace = true;
+                while (canPlace)
+                {
+                    // random cords x and y in the board
+                    int placeCordX = Random.Range(0, GameDataInstance.Rows);
+                    int placeCordY = Random.Range(0, GameDataInstance.Columns);
+
+                    void PlaceHorizontal()
+                    {
+                        // check if can place the word
+                        if (word.Word.Length + placeCordX < GameDataInstance.Board.Length)
+                        {
+                            if (IsValidForHorz(true, word.Word, placeCordX, placeCordY, newGrid))
+                            {
+
+                                PlaceWord(true, word.Word, placeCordX, placeCordY, 1, 0, newGrid);
+                                canPlace = false;
+                            }
+                        }
+                    }
+                    void PlaceVertical()
+                    {
+                        if (word.Word.Length + placeCordY < GameDataInstance.Board.Length)
+                        {
+                            if (IsValidForVert(true, word.Word, placeCordX, placeCordY, newGrid))
+                            {
+                                PlaceWord(true, word.Word, placeCordX, placeCordY, 0, 1, newGrid);
+                                canPlace = false;
+                            }
+
+                        }
+                    }
+                    void PositiveDiagonals()
+                    {
+                        if (word.Word.Length + placeCordX < GameDataInstance.Rows
+                            && word.Word.Length + placeCordY < GameDataInstance.Columns)
+                        {
+                            if (isValidForDiagonalPos(true, word.Word, placeCordX, placeCordY, newGrid))
+                            {
+                                PlaceWord(true, word.Word, placeCordX, placeCordY, 1, 1, newGrid);
+                                canPlace = false;
+                            }
+                        }
+                    }
+                    void NegativeDiagonals()
+                    {
+                        if (word.Word.Length + placeCordX < GameDataInstance.Rows &&
+                            word.Word.Length + placeCordY < GameDataInstance.Columns &&
+                            placeCordX > word.Word.Length && placeCordY > word.Word.Length)
+                        {
+                            if (IsValidForDiagonalNeg(true, word.Word, placeCordX, placeCordY, newGrid))
+                            {
+                                PlaceWord(true, word.Word, placeCordX, placeCordY, 1, -1, newGrid);
+                                canPlace = false;
+                            }
+                        }
+                    }
+
+                    // 0 - horizontal
+                    // 1 - vertical
+                    // 2 - pos diagonal
+                    // 3 - neg diagonal
+                    int howToPlace = Random.Range(0, 4);
+
+                    if (howToPlace == 0)
+                        PlaceHorizontal();
+                    if (howToPlace == 1)
+                        PlaceVertical();
+                    if (howToPlace == 2)
+                        PositiveDiagonals();
+                    if (howToPlace == 3)
+                        NegativeDiagonals();
+                    //}
+                }
+            }
+
+            for (int i = 0; i < GameDataInstance.Columns; i++)
+            {
+                for (int j = 0; j < GameDataInstance.Rows; j++)
+                {
+                    GameDataInstance.Board[i].Row[j] = newGrid[i, j].ToString();
+                }
+            }
+        }
+    }
+
+    private void PlaceWord(bool placeForwards, string word, int startX, int StartY, int xSlope, int ySlope, char[,] newGrid)
+    {
+        if (placeForwards)
+            for (int i = 0; i < word.Length; i++)
+                newGrid[startX + i * xSlope, StartY + i * ySlope] = word[i];
+        else
+            for (int i = 0; i < word.Length; i++)
+                newGrid[startX + i * xSlope, StartY + i * ySlope] = word[word.Length - 1 - i];
+    }
+
+    #region checks if the word can be placed?
+    /// <summary>
+    /// Kiểm tra hàng ngang
+    /// </summary>
+    /// <param name="checkForward"></param>
+    /// <param name="word"></param>
+    /// <param name="startX"></param>
+    /// <param name="startY"></param>
+    /// <param name="grid"></param>
+    /// <returns></returns>
+    private bool IsValidForHorz(bool checkForward, string word, int startX, int startY, char[,] grid)
+    {
+        if (checkForward)
+        {
+            for (int i = 0; i < word.Length; i++)
+            {
+                int errorCounter = Regex.Matches(GameDataInstance.Board[startX + i].Row[startY], @"[a-zA-Z]").Count;
+                if (errorCounter != 0)
+                    if ((int)grid[startX + i, startY] != (int)(word[i]))
+                        return false;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < word.Length; i++)
+            {
+                int errorCounter = Regex.Matches(GameDataInstance.Board[startX + i].Row[startY], @"[a-zA-Z]").Count;
+                if (errorCounter != 0)
+                    if ((int)grid[startX + i, startY] != (int)(word[word.Length - 1 - i]))
+                        return false;
+            }
+        }
+        return true;
+    }
+
+    /// <summary>
+    /// Kiểm tra hàng dọc
+    /// </summary>
+    /// <param name="checkForward"></param>
+    /// <param name="word"></param>
+    /// <param name="startX"></param>
+    /// <param name="startY"></param>
+    /// <param name="grid"></param>
+    /// <returns></returns>
+    private bool IsValidForVert(bool checkForward, string word, int startX, int startY, char[,] grid)
+    {
+        if (checkForward)
+        {
+            for (int i = 0; i < word.Length; i++)
+            {
+                int errorCounter = Regex.Matches(GameDataInstance.Board[startX].Row[startY + i], @"[a-zA-Z]").Count;
+                if (errorCounter != 0)
+                    if ((int)grid[startX, startY + i] != (int)(word[i]))
+                        return false;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < word.Length; i++)
+            {
+                int errorCounter = Regex.Matches(GameDataInstance.Board[startX].Row[startY + i], @"[a-zA-Z]").Count;
+                if (errorCounter != 0)
+                    if ((int)grid[startX, startY + i] != (int)(word[word.Length - 1 - i]))
+                        return false;
+            }
+        }
+
+        return true;
+    }
+
+    /// <summary>
+    /// Kiểm tra hàng chéo phải
+    /// </summary>
+    /// <param name="checkForward"></param>
+    /// <param name="word"></param>
+    /// <param name="startX"></param>
+    /// <param name="startY"></param>
+    /// <param name="grid"></param>
+    /// <returns></returns>
+    private bool isValidForDiagonalPos(bool checkForward, string word, int startX, int startY, char[,] grid)
+    {
+
+        if (checkForward)
+        {
+            for (int i = 0; i < word.Length; i++)
+            {
+                int errorCounter = Regex.Matches(GameDataInstance.Board[startX + i].Row[startY + i], @"[a-zA-Z]").Count;
+                if (errorCounter != 0)
+                    if ((int)grid[startX + i, startY + i] != (int)(word[i]))
+                        return false;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < word.Length; i++)
+            {
+                int errorCounter = Regex.Matches(GameDataInstance.Board[startX + i].Row[startY + i], @"[a-zA-Z]").Count;
+                if (errorCounter != 0)
+                    if ((int)grid[startX + i, startY + i] != (int)(word[word.Length - 1 - i]))
+                        return false;
+            }
+        }
+
+        return true;
+    }
+
+    /// <summary>
+    /// Kiểm tra hàng chèo trái
+    /// </summary>
+    /// <param name="checkForward"></param>
+    /// <param name="word"></param>
+    /// <param name="startX"></param>
+    /// <param name="startY"></param>
+    /// <param name="grid"></param>
+    /// <returns></returns>
+    private bool IsValidForDiagonalNeg(bool checkForward, string word, int startX, int startY, char[,] grid)
+    {
+        if (checkForward)
+        {
+            for (int i = 0; i < word.Length; i++)
+            {
+                int errorCounter = Regex.Matches(GameDataInstance.Board[startX + i].Row[startY - i], @"[a-zA-Z]").Count;
+                if (errorCounter != 0)
+                    if ((int)grid[startX + i, startY - i] != (int)(word[i]))
+                        return false;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < word.Length; i++)
+            {
+                int errorCounter = Regex.Matches(GameDataInstance.Board[startX + i].Row[startY - i], @"[a-zA-Z]").Count;
+                if (errorCounter != 0)
+                    if ((int)grid[startX + i, startY - i] != (int)(word[word.Length - 1 - i]))
+                        return false;
+            }
+        }
+        return true;
+    }
+    #endregion
 }
