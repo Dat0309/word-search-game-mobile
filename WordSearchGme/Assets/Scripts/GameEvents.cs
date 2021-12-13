@@ -159,4 +159,18 @@ public static class GameEvents
             OnToggleSoundFX();
         }
     }
+
+    /// <summary>
+    /// Định nghĩa logic hiển thị chi tiết từ vựng
+    /// </summary>
+    public delegate void DetailWord();
+    public static event DetailWord OnDetailWord;
+
+    public static void DetailWordMethod()
+    {
+        if (OnDetailWord != null)
+        {
+            OnDetailWord();
+        }
+    }
 }
