@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WordChecker : MonoBehaviour
 {
@@ -43,6 +44,7 @@ public class WordChecker : MonoBehaviour
 
     private void Start()
     {
+        //detailWordPopup.SetActive(false);
         currentGameData.selectedBoardData.ClearData();
         _assignedPoints = 0;
         _completeWords = 0;
@@ -120,6 +122,8 @@ public class WordChecker : MonoBehaviour
             {
                 searchingWord.Found = true;
                 GameEvents.CorrectWordMetod(_word, _correctSquareList);
+                //detailWordPopup.SetActive(true);
+                GameEvents.DetailWordMethod();
                 _completeWords++;
                 _word = string.Empty;
                 _correctSquareList.Clear();

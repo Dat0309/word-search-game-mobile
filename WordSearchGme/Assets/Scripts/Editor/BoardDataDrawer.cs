@@ -146,6 +146,10 @@ public class BoardDataDrawer : Editor
                 element.FindPropertyRelative("Word"), GUIContent.none);
             EditorGUI.PropertyField(new Rect(rect.x + 230, rect.y, EditorGUIUtility.labelWidth, EditorGUIUtility.singleLineHeight),
                 element.FindPropertyRelative("WordValue"), GUIContent.none);
+            EditorGUI.PropertyField(new Rect(rect.x + 460, rect.y, EditorGUIUtility.labelWidth, EditorGUIUtility.singleLineHeight),
+                element.FindPropertyRelative("Image"), GUIContent.none);
+            EditorGUI.PropertyField(new Rect(rect.x + 920, rect.y, EditorGUIUtility.labelWidth, EditorGUIUtility.singleLineHeight),
+                element.FindPropertyRelative("Voice"), GUIContent.none);
 
         };
     }

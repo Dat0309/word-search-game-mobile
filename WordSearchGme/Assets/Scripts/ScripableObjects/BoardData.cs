@@ -8,15 +8,30 @@ using UnityEngine;
 public class BoardData : ScriptableObject
 {
     /// <summary>
-    /// Lớp định nghĩa đối tượng bảng
+    /// Lớp định nghĩa đối tượng từ vựng
     /// </summary>
     [System.Serializable]
     public class SearchingWord
     {
         [HideInInspector]
         public bool Found = false;
+
+        /// <summary>
+        /// Từ tiếng anh
+        /// </summary>
         public string Word;
+        /// <summary>
+        /// Nghĩa tiếng việt
+        /// </summary>
         public string WordValue;
+        /// <summary>
+        /// Ảnh minh hoạ
+        /// </summary>
+        public string Image;
+        /// <summary>
+        /// Phiên âm
+        /// </summary>
+        public string Voice;
     }
 
     /*
