@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a94c1ec15fdc14a81751529d5b4f68, type: 3}
+  m_Name: Unit62
+  m_EditorClassIdentifier: 
+  timeInSeconds: 300
+  Columns: 10
+  Rows: 10
+  Board:
+  - Size: 10
+    Row:
+    - Y
+    - Z
+    - F
+    - A
+    - H
+    - E
+    - N
+    - P
+    - M
+    - E
+  - Size: 10
+    Row:
+    - Y
+    - U
+    - A
+    - C
+    - Q
+    - H
+    - O
+    - D
+    - M
+    - M
+  - Size: 10
+    Row:
+    - W
+    - Y
+    - Z
+    - Q
+    - F
+    - D
+    - T
+    - F
+    - F
+    - U
+  - Size: 10
+    Row:
+    - O
+    - J
+    - M
+    - L
+    - V
+    - S
+    - J
+    - L
+    - H
+    - H
+  - Size: 10
+    Row:
+    - B
+    - R
+    - J
+    - L
+    - O
+    - S
+    - R
+    - U
+    - L
+    - K
+  - Size: 10
+    Row:
+    - J
+    - V
+    - Y
+    - P
+    - N
+    - D
+    - C
+    - S
+    - G
+    - J
+  - Size: 10
+    Row:
+    - P
+    - X
+    - T
+    - M
+    - E
+    - E
+    - Z
+    - C
+    - J
+    - O
+  - Size: 10
+    Row:
+    - V
+    - F
+    - H
+    - L
+    - M
+    - N
+    - Y
+    - V
+    - S
+    - W
+  - Size: 10
+    Row:
+    - J
+    - R
+    - G
+    - O
+    - P
+    - I
+    - P
+    - G
+    - I
+    - W
+  - Size: 10
+    Row:
+    - R
+    - F
+    - U
+    - J
+    - S
+    - P
+    - Y
+    - X
+    - D
+    - A
+  SearchWords:
+  - Found: 0
+    Word: PEN
+    WordValue: "B\xFAt m\u1EF1c"
+    Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fpen.png?alt=media&token=ca9e741c-ff9b-4626-8e54-4832e5c7e42a
+    Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fpen.mp3?alt=media&token=62331cde-d366-4fc6-b82f-bb91e15ee1a9
