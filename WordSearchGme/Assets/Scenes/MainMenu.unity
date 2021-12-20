@@ -477,6 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd04c08272a78248b89d296dfbe5a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DetailDialog: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -564,7 +565,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: eb73a641e2dcd3341b1914e956b7b086, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.54
+  m_Volume: 0.363
   m_Pitch: 1
   Loop: 1
   Mute: 0

@@ -20,8 +20,13 @@ public class BoardDataDrawer : Editor
 
     private void OnEnable()
     {
-
+        //ClearBoard();
+        //FillKeyUpWithRandomLetter();
+        //FillUpWithRandomLetter();
+        //ConvertToUpper();
+        //EditorUtility.SetDirty(GameDataInstance);
     }
+
 
     /*Ghi đè phương thức OnInspectorGUI để hiển thị tất cả những biến và nút ở trên, việc này giúp tạo ra 1 setting
     để lưu trữ trực tiếp trên inspector và nếu muốn sửa thì không phải sửa ở code.
@@ -42,6 +47,11 @@ public class BoardDataDrawer : Editor
             DrawBoardTable();
 
         GUILayout.BeginHorizontal();
+        ClearBoard();
+        FillKeyUpWithRandomLetter();
+        FillUpWithRandomLetter();
+        ConvertToUpper();
+
         ClearBoardButton();
         FillUpWithRandomLetterButton();
         FillKeyUpWithRandomLetterButton();
@@ -314,6 +324,159 @@ public class BoardDataDrawer : Editor
                 {
                     GameDataInstance.Board[i].Row[j] = newGrid[i, j].ToString();
                 }
+            }
+        }
+    }
+
+
+    // Chuyển tất cả các chữ cái thành upper case
+    private void ConvertToUpper()
+    {
+        for (var i = 0; i < GameDataInstance.Columns; i++)
+        {
+            for (var j = 0; j < GameDataInstance.Rows; j++)
+            {
+                var errorCounter = Regex.Matches(GameDataInstance.Board[i].Row[j], @"[a-z]").Count;
+
+                if (errorCounter > 0)
+                {
+                    GameDataInstance.Board[i].Row[j] = GameDataInstance.Board[i].Row[j].ToUpper();
+                }
+            }
+        }
+
+        foreach (var searchWord in GameDataInstance.SearchWords)
+        {
+            var errorCounter = Regex.Matches(searchWord.Word, @"[a-z]").Count;
+
+            if (errorCounter > 0)
+            {
+                searchWord.Word = searchWord.Word.ToUpper();
+            }
+        }
+    }
+
+    // Xoá bảng
+    private void ClearBoard()
+    {
+        for (int i = 0; i < GameDataInstance.Columns; i++)
+        {
+            for (int j = 0; j < GameDataInstance.Rows; j++)
+            {
+                GameDataInstance.Board[i].Row[j] = "";
+            }
+        }
+    }
+
+    // Thêm random các chữ cái vào bảng vào bảng
+    private void FillUpWithRandomLetter()
+    {
+        for (int i = 0; i < GameDataInstance.Columns; i++)
+        {
+            for (int j = 0; j < GameDataInstance.Rows; j++)
+            {
+                int errorCounter = Regex.Matches(GameDataInstance.Board[i].Row[j], @"[a-zA-Z]").Count;
+                string letters = "QWERTYUIOPLKJHGFDSAZXCVBNM";
+                int index = UnityEngine.Random.Range(0, letters.Length);
+
+                if (errorCounter == 0)
+                {
+                    GameDataInstance.Board[i].Row[j] = letters[index].ToString();
+                }
+            }
+        }
+    }
+
+    // Thêm random các từ khoá vào bảng vào bảng
+    private void FillKeyUpWithRandomLetter()
+    {
+        char[,] newGrid = new char[GameDataInstance.Rows, GameDataInstance.Columns];
+
+        foreach (var word in GameDataInstance.SearchWords)
+        {
+            //for (int i = 0; i < word.Word.Length; i++)
+            //{
+            bool canPlace = true;
+            while (canPlace)
+            {
+                // random cords x and y in the board
+                int placeCordX = Random.Range(0, GameDataInstance.Rows);
+                int placeCordY = Random.Range(0, GameDataInstance.Columns);
+
+                void PlaceHorizontal()
+                {
+                    // check if can place the word
+                    if (word.Word.Length + placeCordX < GameDataInstance.Board.Length)
+                    {
+                        if (IsValidForHorz(true, word.Word, placeCordX, placeCordY, newGrid))
+                        {
+
+                            PlaceWord(true, word.Word, placeCordX, placeCordY, 1, 0, newGrid);
+                            canPlace = false;
+                        }
+                    }
+                }
+                void PlaceVertical()
+                {
+                    if (word.Word.Length + placeCordY < GameDataInstance.Board.Length)
+                    {
+                        if (IsValidForVert(true, word.Word, placeCordX, placeCordY, newGrid))
+                        {
+                            PlaceWord(true, word.Word, placeCordX, placeCordY, 0, 1, newGrid);
+                            canPlace = false;
+                        }
+
+                    }
+                }
+                void PositiveDiagonals()
+                {
+                    if (word.Word.Length + placeCordX < GameDataInstance.Rows
+                        && word.Word.Length + placeCordY < GameDataInstance.Columns)
+                    {
+                        if (isValidForDiagonalPos(true, word.Word, placeCordX, placeCordY, newGrid))
+                        {
+                            PlaceWord(true, word.Word, placeCordX, placeCordY, 1, 1, newGrid);
+                            canPlace = false;
+                        }
+                    }
+                }
+                void NegativeDiagonals()
+                {
+                    if (word.Word.Length + placeCordX < GameDataInstance.Rows &&
+                        word.Word.Length + placeCordY < GameDataInstance.Columns &&
+                        placeCordX > word.Word.Length && placeCordY > word.Word.Length)
+                    {
+                        if (IsValidForDiagonalNeg(true, word.Word, placeCordX, placeCordY, newGrid))
+                        {
+                            PlaceWord(true, word.Word, placeCordX, placeCordY, 1, -1, newGrid);
+                            canPlace = false;
+                        }
+                    }
+                }
+
+                // 0 - horizontal
+                // 1 - vertical
+                // 2 - pos diagonal
+                // 3 - neg diagonal
+                int howToPlace = Random.Range(0, 4);
+
+                if (howToPlace == 0)
+                    PlaceHorizontal();
+                if (howToPlace == 1)
+                    PlaceVertical();
+                if (howToPlace == 2)
+                    PositiveDiagonals();
+                if (howToPlace == 3)
+                    NegativeDiagonals();
+                //}
+            }
+        }
+
+        for (int i = 0; i < GameDataInstance.Columns; i++)
+        {
+            for (int j = 0; j < GameDataInstance.Rows; j++)
+            {
+                GameDataInstance.Board[i].Row[j] = newGrid[i, j].ToString();
             }
         }
     }

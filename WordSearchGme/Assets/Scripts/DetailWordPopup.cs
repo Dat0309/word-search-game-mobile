@@ -15,6 +15,7 @@ public class DetailWordPopup : MonoBehaviour
     public Text text;
     public AudioSource audioSource;
     AudioClip audioClip;
+    private BoardData.SearchingWord _word;
 
     // Start is called before the first frame update
     void Start()
@@ -44,14 +45,20 @@ public class DetailWordPopup : MonoBehaviour
         {
             if (searchingWord.Found)
             {
+                _word = searchingWord;
                 StartCoroutine(DownloadImage(searchingWord.Image));
-                StartCoroutine(DownloadMusic(searchingWord.Voice));
                 text.text = searchingWord.Word;
                 detailWordPopup.SetActive(true);
+                searchingWord.Found = false;
                 //SoundManager.instance.PlayWinSound();
                 break;
             }
         }
+    }
+
+    public void PlayVoice()
+    {
+        StartCoroutine(DownloadMusic(_word.Voice));
     }
 
     [System.Obsolete]
