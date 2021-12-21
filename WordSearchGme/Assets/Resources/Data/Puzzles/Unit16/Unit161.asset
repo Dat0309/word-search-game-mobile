@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: 8
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Feight.jpg?alt=media&token=2690e3a4-7536-43db-bbf1-b1cf1d217fa6
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Feight.mp3?alt=media&token=78f9afd3-4495-4763-b131-3344432ee3fa
+    Example: I have EIGHT dogs
   - Found: 0
     Word: NINE
     WordValue: 9
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fnine.jpg?alt=media&token=de888503-b37b-4667-a25b-8771d96cb222
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fnine.mp3?alt=media&token=a29d1ec2-19ca-45d6-92fa-694c7dcb8f12
+    Example: NINE points!
   - Found: 0
     Word: SEVEN
     WordValue: 7
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fseven.jpg?alt=media&token=a70073c4-1ebb-49c7-ae62-b697cf985fc3
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fseven.mp3?alt=media&token=227ad8e9-7786-4e75-8277-93215acefc92
+    Example: I have SEVEN dog

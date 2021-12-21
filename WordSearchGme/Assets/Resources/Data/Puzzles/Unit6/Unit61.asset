@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: "c\xE1i chu\xF4ng"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fbell.png?alt=media&token=d6a0d499-fb90-43ec-b6ad-1a442e236687
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fbell.mp3?alt=media&token=f65f656e-4a2f-4142-a347-511f8a70604d
+    Example: He is ringing the BELL
   - Found: 0
     Word: RED
     WordValue: "M\xE0u \u0111\u1ECF"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fred.png?alt=media&token=83d0feb7-a6fb-46f9-92f4-15cbf3a1acf1
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fred.mp3?alt=media&token=a067d182-44bf-46cf-9b36-c001ecddc5ac
+    Example: RED colored pen
   - Found: 0
     Word: PENCIL
     WordValue: "b\xFAt ch\xEC"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fpencil.png?alt=media&token=f8ad22fc-2a0a-4a94-9549-a0d8ae90a9b3
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fpencil.mp3?alt=media&token=93a08446-d331-4e21-b072-19ecad43c259
+    Example: I have a PENCIL

@@ -142,8 +142,10 @@ MonoBehaviour:
     WordValue: 6
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fsix.jpg?alt=media&token=72812cd7-0b89-4440-87a6-573ea9518e1b
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fsix.mp3?alt=media&token=b4ac8435-2f3a-4791-985c-d63b41ec551b
+    Example: I have SIX pen
   - Found: 0
     Word: TEN
     WordValue: 10
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Ften.jpg?alt=media&token=4a83c0a3-adb4-48ef-9299-56335ae34f7b
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Ften.mp3?alt=media&token=77098ee4-366f-44f5-b05a-99b97d46d6aa
+    Example: TEN points!

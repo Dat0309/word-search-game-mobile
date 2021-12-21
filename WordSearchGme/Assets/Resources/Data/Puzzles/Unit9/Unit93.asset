@@ -142,8 +142,10 @@ MonoBehaviour:
     WordValue: 2
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Ftwo.jpg?alt=media&token=0cc4477b-ad39-413b-a343-00e8c975071f
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Ftwo.mp3?alt=media&token=043ab16e-2c0f-4e05-b0c5-c354433acd9b
+    Example: I have TWO dog
   - Found: 0
     Word: THREE
     WordValue: 3
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fthree.png?alt=media&token=efaa2286-86b9-48cf-bdee-6c021f936d58
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fthree.mp3?alt=media&token=3b9ff1ca-0537-48d8-b37e-3802ec587549
+    Example: My family has THREE people

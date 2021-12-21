@@ -20,11 +20,7 @@ public class BoardDataDrawer : Editor
 
     private void OnEnable()
     {
-        //ClearBoard();
-        //FillKeyUpWithRandomLetter();
-        //FillUpWithRandomLetter();
-        //ConvertToUpper();
-        //EditorUtility.SetDirty(GameDataInstance);
+        
     }
 
 
@@ -160,6 +156,8 @@ public class BoardDataDrawer : Editor
                 element.FindPropertyRelative("Image"), GUIContent.none);
             EditorGUI.PropertyField(new Rect(rect.x + 920, rect.y, EditorGUIUtility.labelWidth, EditorGUIUtility.singleLineHeight),
                 element.FindPropertyRelative("Voice"), GUIContent.none);
+            EditorGUI.PropertyField(new Rect(rect.x + 920, rect.y, EditorGUIUtility.labelWidth, EditorGUIUtility.singleLineHeight),
+                element.FindPropertyRelative("Example"), GUIContent.none);
 
         };
     }

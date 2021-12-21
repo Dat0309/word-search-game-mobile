@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: "C\xE1i b\xE1nh"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fcake.png?alt=media&token=13b25671-95dd-47ae-b017-c381de661104
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fcake.mp3?alt=media&token=aa63d92f-3ac4-4c90-bd3c-fbde73f1f99b
+    Example: I eat CAKE
   - Found: 0
     Word: CAR
     WordValue: "Xe \xF4 t\xF4"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fcar.png?alt=media&token=8e154421-0da4-49d9-8d4d-9fdecc64674f
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fcar.mp3?alt=media&token=003973a4-c372-4c27-a53f-584b1740d300
+    Example: I drive a CAR
   - Found: 0
     Word: CAT
     WordValue: "Con m\xE8o"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fcar.png?alt=media&token=8e154421-0da4-49d9-8d4d-9fdecc64674f
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fcar.mp3?alt=media&token=003973a4-c372-4c27-a53f-584b1740d300
+    Example: I raise a CAT

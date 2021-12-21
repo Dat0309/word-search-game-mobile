@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: "Con chu\u1ED9t"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fmouse.png?alt=media&token=a4b1bf13-1bf1-4aec-bb8e-e719c1a23b74
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fmouse.mp3?alt=media&token=65a318db-8f87-4e1d-882c-a1e0f23e5fb0
+    Example: I have a MOUSE
   - Found: 0
     Word: MOTHER
     WordValue: "M\u1EB9"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fmother.png?alt=media&token=5b50d235-7416-47e2-9478-007786995d69
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fmother.mp3?alt=media&token=ee2dfcc9-c46d-4da7-b09b-13f5a9989822
+    Example: "My MOTHER is so beaut\xECul"
   - Found: 0
     Word: MANGO
     WordValue: "Qu\u1EA3 xo\xE0i"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fmango.png?alt=media&token=6b371bb7-4a22-408e-a975-5abe4948492e
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fmango.mp3?alt=media&token=d3fac400-a805-4894-bf69-7784f5399477
+    Example: I eat a MANGO

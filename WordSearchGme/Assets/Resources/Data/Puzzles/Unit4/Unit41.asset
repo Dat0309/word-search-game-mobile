@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: "c\xE1i b\xE0n"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fdesk.png?alt=media&token=d9b89aa6-ce03-41fe-a580-9d0424b49b3f
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fdesk.mp3?alt=media&token=d8e0ab49-8460-4b27-8957-0066df09df52
+    Example: I have a DESK
   - Found: 0
     Word: DOG
     WordValue: "con ch\xF3"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fdog.png?alt=media&token=f0bf990a-913b-454a-b36c-8af2828b2cb0
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fdog.mp3?alt=media&token=acff03d7-0517-491b-86cd-0fd83e3aaf02
+    Example: I have a DOG
   - Found: 0
     Word: DUCK
     WordValue: "Con v\u1ECBt"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fduck.png?alt=media&token=2bb65c6b-3ae9-44df-8236-6cc966e323e1
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fduck.mp3?alt=media&token=1855b91b-a3e7-4726-998e-9e901f534a41
+    Example: I have a DUCK

@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: "Xe \u0111\u1EA1p"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fbike.png?alt=media&token=fd17a1eb-9557-4a95-ae18-60c5c48f974a
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fbike.mp3?alt=media&token=2fb3dc44-e817-44b5-975c-1f45542c8582
-  - Found: 0
+    Example: I have a BIKE
+  - Found: 1
     Word: BALL
     WordValue: "Qu\u1EA3 b\xF3ng"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fball.png?alt=media&token=658d812d-b239-4e92-b118-fdffd8693a34
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fball.mp3?alt=media&token=99294c9d-13b3-48c2-abac-f03b62fd9072
+    Example: I have a BALL
   - Found: 0
     Word: BOOK
     WordValue: "Quy\u1EC3n s\xE1ch"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fbook.png?alt=media&token=a3d5d951-5420-4767-ac4a-a94d4ac9c05c
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fbook.mp3?alt=media&token=ee4e4711-de79-46af-b436-23b125a662eb
+    Example: I have a BOOK

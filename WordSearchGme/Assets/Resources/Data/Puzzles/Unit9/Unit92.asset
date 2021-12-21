@@ -142,18 +142,22 @@ MonoBehaviour:
     WordValue: 1
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fone.jpg?alt=media&token=34a28d7d-ad65-4177-aa4d-f53b42f8f8aa
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fone.mp3?alt=media&token=f1e897c8-eddf-4cd3-9df2-807d03574e5e
+    Example: ONE point!
   - Found: 0
     Word: MOP
     WordValue: "C\xE2y lau nh\xE0"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fmop.png?alt=media&token=cd97133f-fe32-46a1-a662-b5938e6020a3
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fmop.mp3?alt=media&token=fb788442-28b8-40f6-899b-c23da65635ed
+    Example: I have a MOP
   - Found: 0
     Word: LOCK
     WordValue: "\u1ED4 kho\xE1"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Flock.png?alt=media&token=4b98a293-db09-4701-97d0-db921728fd91
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Flock.mp3?alt=media&token=887b8243-3e13-4d54-91ac-73533eecf723
+    Example: The door is LOCKED
   - Found: 0
     Word: FOUR
     WordValue: 4
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Ffour.jpg?alt=media&token=d5d647af-6a08-401f-8de6-337c4d6966dc
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Ffour.mp3?alt=media&token=3f1b5d71-731a-40ea-937f-9c5a78725ca3
+    Example: I have FOUR cats

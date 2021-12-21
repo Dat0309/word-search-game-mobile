@@ -32,6 +32,10 @@ public class BoardData : ScriptableObject
         /// Phiên âm
         /// </summary>
         public string Voice;
+        /// <summary>
+        /// Ví dụ minh hoạ
+        /// </summary>
+        public string Example;
     }
 
     /*

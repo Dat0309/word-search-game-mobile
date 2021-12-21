@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: "M\u1EB7t"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Ffacec.png?alt=media&token=c24759f7-1170-4b10-8960-c12f8e0eb033
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fface.mp3?alt=media&token=186de595-5cbb-491b-a539-cea4e94551f1
+    Example: I have a FACE
   - Found: 0
     Word: FATHER
     WordValue: "B\u1ED1"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Ffather.png?alt=media&token=d23eb891-abcd-45ac-85a9-beb3443b0881
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Ffather.mp3?alt=media&token=cd2da886-4246-4071-afba-2876d19aa767
+    Example: My DAD is very smart
   - Found: 0
     Word: FOOT
     WordValue: "B\xE0n ch\xE2n"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Ffoot.png?alt=media&token=52cad1f8-adf9-4b2c-bb9a-b9efe716c348
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Ffoot.mp3?alt=media&token=95f5d8d7-9e62-417e-a718-a6f6fc043df7
+    Example: I have a FOOT

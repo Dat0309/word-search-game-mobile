@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: "qu\u1EA3 t\xE1o"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fapple.png?alt=media&token=705f6299-7978-4106-9653-3db0b6321740
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fapple.mp3?alt=media&token=460e96d8-99ca-4f5c-94b1-3495c84f1d33
+    Example: An APPLE a day keeps the doctor away
   - Found: 0
     Word: BAG
     WordValue: "c\xE1i t\xFAi"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fbag.png?alt=media&token=24f2a6cb-81a6-4e38-a61a-0093b2109ced
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fbag.mp3?alt=media&token=48796551-a793-4d9a-80a2-01a435e728b0
+    Example: Paid for the BAG
   - Found: 0
     Word: CAN
     WordValue: "Lon n\u01B0\u1EDBc"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fcan.png?alt=media&token=c6ea3a15-21c2-4277-87ab-f254e73927da
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fcan.mp3?alt=media&token=f0c15b02-bb8a-45b1-b2b8-8076f6af2f72
+    Example: I hold CAN

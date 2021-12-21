@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: "H\u1ED3 nu\xF3c"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Flake.png?alt=media&token=3ba4d9ad-9d4a-4bf0-b3a0-bdb9d9e68075
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Flake.mp3?alt=media&token=97a2f0d0-e6a5-41d9-b07e-e37959b60b16
+    Example: The LAKE is so wide
   - Found: 0
     Word: LEAF
     WordValue: "L\xE1 c\xE2y"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fleaf.png?alt=media&token=a6ab0301-a44e-40fc-b9d4-27fe7b3c08c2
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Flemon.mp3?alt=media&token=2f546457-cb56-45f3-a84b-8b7f035f8a27
+    Example: LEAF are falling
   - Found: 0
     Word: LEMON
     WordValue: "Qu\u1EA3 chanh"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Flemon.png?alt=media&token=9b486022-b483-4850-a292-baab56475ac6
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Flemon.mp3?alt=media&token=2f546457-cb56-45f3-a84b-8b7f035f8a27
+    Example: I have a LEMON

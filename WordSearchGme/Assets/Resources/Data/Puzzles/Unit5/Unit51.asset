@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: "con g\xE0"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fchicken.png?alt=media&token=fff691ba-fe12-451c-8fd2-f37c7cc8590c
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fchicken.mp3?alt=media&token=22c273dc-8b9c-461d-b23c-c62564d64385
+    Example: I raise CHICKEN
   - Found: 0
     Word: CHIPS
     WordValue: "khoai t\xE2y chi\xEAn"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fchips.png?alt=media&token=30a2601b-35e9-4991-8ab5-4d5ea5207fe9
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fchips.mp3?alt=media&token=ee7509c3-7577-40f1-a7cc-314137f35827
+    Example: I eat CHIPS
   - Found: 0
     Word: FISH
     WordValue: "c\xE1"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Ffish.jpg?alt=media&token=4cde541f-cfeb-4e55-9ec2-723c98e1b0a1
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Ffish.mp3?alt=media&token=3f24df03-82d7-4af3-8862-e4374860ed69
+    Example: I have a FISH

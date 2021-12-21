@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: "Con d\xEA"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fgoat.png?alt=media&token=61bc1209-a515-45ed-9bd9-c22090ab80cd
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fgoat.mp3?alt=media&token=e825c9b5-4f6c-4a2e-9b13-292a31c693cf
+    Example: I have a GOAT
   - Found: 0
     Word: GIRL
     WordValue: "C\xF4 b\xE9"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fgirl.png?alt=media&token=518c893f-0e63-4eba-b2f4-1535f60c0753
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fgirl.mp3?alt=media&token=ddfd487a-c241-4188-b413-4e349f429d12
+    Example: The GIRL is so pretty
   - Found: 0
     Word: GATE
     WordValue: "C\u1ED5ng"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fgate.png?alt=media&token=ef0cb366-2e60-4970-beda-3331b86876e3
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fgate.mp3?alt=media&token=4aae2a89-3a95-486f-80f6-9a584e769077
+    Example: The GATE is open

@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: "Ch\u1EA1y"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Frun.png?alt=media&token=b9a8f8f4-f370-47d7-a96e-869e2d5bb99e
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Frun.mp3?alt=media&token=897740da-f35d-438e-9884-3706139273f4
+    Example: I RUN
   - Found: 0
     Word: SUN
     WordValue: "M\u1EB7t tr\u1EDDi"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fsun.png?alt=media&token=dc4ee263-c65b-411a-a54b-2000f3040a0f
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fsun.mp3?alt=media&token=1b50344b-825f-4b53-a33d-99be797bc48e
+    Example: The SUN is so big
   - Found: 0
     Word: TRUCK
     WordValue: "\xD4 t\xF4 t\u1EA3i"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Ftruck.jpg?alt=media&token=83426cf3-12a6-485f-8ea6-b68cdbf444ab
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Ftruck.mp3?alt=media&token=b53351aa-702d-4c2c-8ec8-ab4f5c3b542c
+    Example: The TRUCK is drive

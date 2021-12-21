@@ -13,6 +13,7 @@ public class DetailWordPopup : MonoBehaviour
     public GameObject detailWordPopup;
     public Image image;
     public Text text;
+    public Text exText;
     public AudioSource audioSource;
     AudioClip audioClip;
     private BoardData.SearchingWord _word;
@@ -48,6 +49,7 @@ public class DetailWordPopup : MonoBehaviour
                 _word = searchingWord;
                 StartCoroutine(DownloadImage(searchingWord.Image));
                 text.text = searchingWord.Word;
+                exText.text = searchingWord.Example;
                 detailWordPopup.SetActive(true);
                 searchingWord.Found = false;
                 //SoundManager.instance.PlayWinSound();

@@ -142,13 +142,16 @@ MonoBehaviour:
     WordValue: "Qu\u1EA3 chu\u1ED1i"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fbanana.png?alt=media&token=2f05de32-24ab-4430-a40b-07c4c84a34ce
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fbanana.mp3?alt=media&token=676c03e9-fd41-47b3-9e46-fc4a82f2672f
+    Example: I eat a BANANA
   - Found: 0
     Word: NOODLES
     WordValue: "M\xEC"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fnoodle.png?alt=media&token=ed633573-09a2-46de-bc2d-781799571fa3
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fnoodles.mp3?alt=media&token=493c6f74-7024-4dc3-8458-37311605aae1
+    Example: I eat a NOODLES
   - Found: 0
     Word: NUT
     WordValue: "H\u1EA1t l\u1EA1c"
     Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fnut.png?alt=media&token=e93319db-42d2-4a2b-b302-733a18d8a43a
     Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fnut.mp3?alt=media&token=f3f4eef4-fd63-40c3-82cd-facc09da108e
+    Example: I eat a NUT
