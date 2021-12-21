@@ -53,11 +53,13 @@
     <UnityVersion>2020.3.20f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\LoadImageUrl.cs" />
     <Compile Include="Assets\Scripts\UnlockLevelPopup.cs" />
     <Compile Include="Assets\Scripts\DataSaver.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\SearchingWordsList.cs" />
     <Compile Include="Assets\Scripts\CountDownTime.cs" />
+    <Compile Include="Assets\Scripts\DetailWordPopup.cs" />
     <Compile Include="Assets\Scripts\GameUtility.cs" />
     <Compile Include="Assets\Scripts\SelectPuzzleButton.cs" />
     <Compile Include="Assets\Scripts\SoundToggleButton.cs" />
@@ -75,8 +77,6 @@
     <Compile Include="Assets\Scripts\GameEvents.cs" />
     <Compile Include="Assets\Scripts\WinPopup.cs" />
     <Compile Include="Assets\Scripts\SettingsScene.cs" />
-    <Compile Include="Assets\Scripts\DetailWordPopup.cs" />
-    <Compile Include="Assets\Scripts\LoadImageUrl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sounds\Read.txt" />

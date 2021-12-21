@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameUtility : MonoBehaviour
 {
+    public GameObject DetailDialog;
     /// <summary>
     /// Lớp định nghĩa các hàm thao tác tổng thể với game
     /// </summary>
@@ -33,5 +34,10 @@ public class GameUtility : MonoBehaviour
     public void MuteToggleSoundFX()
     {
         SoundManager.instance.ToggleSoundFX();
+    }
+
+    public void ResumeBtn()
+    {
+        DetailDialog.SetActive(false);
     }
 }

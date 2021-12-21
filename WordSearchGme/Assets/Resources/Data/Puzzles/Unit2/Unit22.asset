@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a94c1ec15fdc14a81751529d5b4f68, type: 3}
+  m_Name: Unit22
+  m_EditorClassIdentifier: 
+  timeInSeconds: 300
+  Columns: 10
+  Rows: 10
+  Board:
+  - Size: 10
+    Row:
+    - G
+    - Y
+    - Y
+    - D
+    - S
+    - D
+    - D
+    - X
+    - D
+    - T
+  - Size: 10
+    Row:
+    - K
+    - W
+    - Y
+    - T
+    - I
+    - Y
+    - W
+    - B
+    - F
+    - O
+  - Size: 10
+    Row:
+    - Q
+    - U
+    - L
+    - S
+    - L
+    - M
+    - E
+    - J
+    - R
+    - U
+  - Size: 10
+    Row:
+    - B
+    - M
+    - F
+    - O
+    - Q
+    - L
+    - R
+    - B
+    - Q
+    - W
+  - Size: 10
+    Row:
+    - Q
+    - O
+    - H
+    - I
+    - B
+    - Z
+    - B
+    - Z
+    - T
+    - O
+  - Size: 10
+    Row:
+    - Y
+    - I
+    - Z
+    - M
+    - O
+    - E
+    - X
+    - U
+    - I
+    - S
+  - Size: 10
+    Row:
+    - F
+    - S
+    - F
+    - F
+    - X
+    - J
+    - C
+    - L
+    - J
+    - O
+  - Size: 10
+    Row:
+    - Z
+    - T
+    - W
+    - J
+    - V
+    - W
+    - B
+    - U
+    - K
+    - M
+  - Size: 10
+    Row:
+    - G
+    - V
+    - O
+    - Q
+    - U
+    - A
+    - Y
+    - D
+    - P
+    - N
+  - Size: 10
+    Row:
+    - H
+    - S
+    - B
+    - O
+    - G
+    - D
+    - W
+    - G
+    - Y
+    - V
+  SearchWords:
+  - Found: 0
+    Word: CUP
+    WordValue: "c\xE1i ch\xE9n"
+    Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fcup.png?alt=media&token=7eb7761b-741b-4bba-b8fd-c8ca0eea0813
+    Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fcup.mp3?alt=media&token=a03462bd-a5cb-4b03-bd6f-3c6dadbe720d
+    Example: The CUP is very beautiful

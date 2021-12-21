@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a94c1ec15fdc14a81751529d5b4f68, type: 3}
+  m_Name: Unit141
+  m_EditorClassIdentifier: 
+  timeInSeconds: 300
+  Columns: 10
+  Rows: 10
+  Board:
+  - Size: 10
+    Row:
+    - W
+    - T
+    - E
+    - D
+    - D
+    - Y
+    - G
+    - K
+    - N
+    - O
+  - Size: 10
+    Row:
+    - P
+    - T
+    - B
+    - A
+    - W
+    - E
+    - D
+    - A
+    - P
+    - H
+  - Size: 10
+    Row:
+    - M
+    - K
+    - O
+    - X
+    - A
+    - G
+    - E
+    - F
+    - Q
+    - R
+  - Size: 10
+    Row:
+    - J
+    - Y
+    - Z
+    - P
+    - N
+    - R
+    - N
+    - B
+    - Q
+    - D
+  - Size: 10
+    Row:
+    - K
+    - I
+    - D
+    - T
+    - K
+    - D
+    - G
+    - M
+    - P
+    - L
+  - Size: 10
+    Row:
+    - C
+    - K
+    - V
+    - R
+    - B
+    - T
+    - S
+    - D
+    - F
+    - U
+  - Size: 10
+    Row:
+    - P
+    - G
+    - K
+    - R
+    - T
+    - L
+    - B
+    - G
+    - V
+    - B
+  - Size: 10
+    Row:
+    - Q
+    - M
+    - Q
+    - K
+    - P
+    - H
+    - B
+    - A
+    - L
+    - H
+  - Size: 10
+    Row:
+    - T
+    - I
+    - G
+    - E
+    - R
+    - L
+    - E
+    - T
+    - Y
+    - L
+  - Size: 10
+    Row:
+    - X
+    - G
+    - N
+    - K
+    - Y
+    - D
+    - U
+    - M
+    - S
+    - R
+  SearchWords:
+  - Found: 0
+    Word: TEDDY
+    WordValue: "G\u1EA5u b\xF4ng"
+    Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fteddy%20bear.png?alt=media&token=9d533db9-43ab-43a1-937f-f0ed5c33118e
+    Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fteddy.mp3?alt=media&token=24c6c132-a156-44be-a03f-726cfbf3cc4b
+    Example: TEDDY is so big
+  - Found: 0
+    Word: TIGER
+    WordValue: "Con h\u1ED5"
+    Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Ftiger.png?alt=media&token=ed52fd7d-d677-4d99-9bdb-fe8546a3712e
+    Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Ftiger.mp3?alt=media&token=7f5a949b-eb8c-46c1-8986-8e27a3c243ef
+    Example: I have a TIGER
+  - Found: 0
+    Word: TOP
+    WordValue: Con quay
+    Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Ftop.png?alt=media&token=0ee3580e-ec6a-4681-8b8e-260bbdbcafe8
+    Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Ftop.mp3?alt=media&token=512e5b7b-883a-4e0c-a31f-5adb70ff47ad
+    Example: I have a TOP

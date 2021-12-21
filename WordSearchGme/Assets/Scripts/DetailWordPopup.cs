@@ -13,8 +13,10 @@ public class DetailWordPopup : MonoBehaviour
     public GameObject detailWordPopup;
     public Image image;
     public Text text;
+    public Text exText;
     public AudioSource audioSource;
     AudioClip audioClip;
+    private BoardData.SearchingWord _word;
 
     // Start is called before the first frame update
     void Start()
@@ -44,14 +46,21 @@ public class DetailWordPopup : MonoBehaviour
         {
             if (searchingWord.Found)
             {
+                _word = searchingWord;
                 StartCoroutine(DownloadImage(searchingWord.Image));
-                StartCoroutine(DownloadMusic(searchingWord.Voice));
                 text.text = searchingWord.Word;
+                exText.text = searchingWord.Example;
                 detailWordPopup.SetActive(true);
+                searchingWord.Found = false;
                 //SoundManager.instance.PlayWinSound();
                 break;
             }
         }
+    }
+
+    public void PlayVoice()
+    {
+        StartCoroutine(DownloadMusic(_word.Voice));
     }
 
     [System.Obsolete]

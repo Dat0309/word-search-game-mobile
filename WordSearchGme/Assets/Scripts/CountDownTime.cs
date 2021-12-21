@@ -43,6 +43,11 @@ public class CountDownTime : MonoBehaviour
         _stopTimer=true;
     }
 
+    public void ResumTimer()
+    {
+        _stopTimer = false;
+    }
+
     private void Update()
     {
         if (!_stopTimer)
