@@ -13,6 +13,7 @@ public class DetailWordPopup : MonoBehaviour
     public GameObject detailWordPopup;
     public Image image;
     public Text text;
+    public Text textValue;
     public Text exText;
     public AudioSource audioSource;
     AudioClip audioClip;
@@ -49,6 +50,7 @@ public class DetailWordPopup : MonoBehaviour
                 _word = searchingWord;
                 StartCoroutine(DownloadImage(searchingWord.Image));
                 text.text = searchingWord.Word;
+                textValue.text = searchingWord.WordValue;
                 exText.text = searchingWord.Example;
                 detailWordPopup.SetActive(true);
                 searchingWord.Found = false;

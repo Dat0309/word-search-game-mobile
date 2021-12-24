@@ -12,26 +12,12 @@ public class CountDownTime : MonoBehaviour
 
     public GameData currentGameData;
     public Text timerText;
-    public static CountDownTime instance;
     private float _timeLeft;
     private float _minutes;
     private float _seconds;
     private float _oneSecondDown;
     private bool _timeOut;
     private bool _stopTimer;
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(this);
-        }
-        else
-        {
-            Destroy(this);
-        }
-    }
 
     // Start is called before the first frame update
     void Start()
