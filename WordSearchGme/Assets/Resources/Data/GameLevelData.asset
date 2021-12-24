@@ -16,10 +16,15 @@ MonoBehaviour:
   - CatName: Unit1
     boardData:
     - {fileID: 11400000, guid: 7fde9ceda78828b4a93b58a0a27cb5c8, type: 2}
+    - {fileID: 11400000, guid: fcf5ec0b19dbed445a965dba5506d837, type: 2}
+    - {fileID: 11400000, guid: 17be2a7859a36fa429042476446d052a, type: 2}
   - CatName: Unit2
     boardData:
     - {fileID: 11400000, guid: d9be2775aea46c644bcfa1781258b321, type: 2}
     - {fileID: 11400000, guid: e75963a3f9be8494c91c85df997bf744, type: 2}
+    - {fileID: 11400000, guid: f3a2f8c9165735e41ab58d7ae8eae3c2, type: 2}
+    - {fileID: 11400000, guid: 2929f56c2416abe43928bf3eb3f002e8, type: 2}
+    - {fileID: 11400000, guid: c70e917b5abd4084180c5b78b57db64d, type: 2}
   - CatName: Unit3
     boardData:
     - {fileID: 11400000, guid: 95009f9ab77ed6a43970483ca6ea7233, type: 2}

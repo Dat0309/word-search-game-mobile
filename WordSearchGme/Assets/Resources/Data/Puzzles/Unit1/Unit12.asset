@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a94c1ec15fdc14a81751529d5b4f68, type: 3}
+  m_Name: Unit12
+  m_EditorClassIdentifier: 
+  timeInSeconds: 280
+  Columns: 10
+  Rows: 10
+  Board:
+  - Size: 10
+    Row:
+    - G
+    - U
+    - T
+    - G
+    - A
+    - Y
+    - C
+    - C
+    - O
+    - S
+  - Size: 10
+    Row:
+    - M
+    - E
+    - R
+    - Z
+    - C
+    - I
+    - W
+    - X
+    - L
+    - V
+  - Size: 10
+    Row:
+    - X
+    - Q
+    - R
+    - L
+    - L
+    - H
+    - Y
+    - A
+    - X
+    - P
+  - Size: 10
+    Row:
+    - U
+    - V
+    - M
+    - X
+    - F
+    - V
+    - L
+    - L
+    - G
+    - I
+  - Size: 10
+    Row:
+    - K
+    - S
+    - S
+    - O
+    - K
+    - I
+    - B
+    - S
+    - J
+    - Z
+  - Size: 10
+    Row:
+    - K
+    - L
+    - Q
+    - S
+    - H
+    - Q
+    - R
+    - X
+    - W
+    - Z
+  - Size: 10
+    Row:
+    - N
+    - I
+    - Z
+    - I
+    - Y
+    - Z
+    - Z
+    - W
+    - T
+    - B
+  - Size: 10
+    Row:
+    - P
+    - D
+    - Y
+    - H
+    - F
+    - X
+    - I
+    - E
+    - Y
+    - K
+  - Size: 10
+    Row:
+    - Q
+    - E
+    - Z
+    - S
+    - W
+    - I
+    - N
+    - G
+    - O
+    - N
+  - Size: 10
+    Row:
+    - T
+    - L
+    - A
+    - M
+    - P
+    - Z
+    - O
+    - Q
+    - X
+    - R
+  SearchWords:
+  - Found: 0
+    Word: SLIDE
+    WordValue: "C\u1EA7u tr\u01B0\u1EE3t"
+    Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fslide.png?alt=media&token=34d3d5f3-a9da-40a2-960b-9a6f2f0a0348
+    Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fslide.mp3?alt=media&token=d55a329a-5d99-476e-8546-f8af1561d46c
+    Example: I play SLIDE
+  - Found: 0
+    Word: SWING
+    WordValue: "X\xEDch \u0111u"
+    Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Fswing.png?alt=media&token=26bf776c-1617-425f-9a6f-d378aee9816b
+    Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Fswing.mp3?alt=media&token=6b86c52e-05ad-4f35-9fe2-61d01e9ddb7c
+    Example: I play SWING
+  - Found: 0
+    Word: LAMP
+    WordValue: "C\u1ED9t \u0111\xE8n"
+    Image: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/IMAGE%2Flamp.png?alt=media&token=ab25fcbe-f6a5-4552-8931-140c1a919c11
+    Voice: https://firebasestorage.googleapis.com/v0/b/wordsearchgame-905d7.appspot.com/o/AUDIO%2Flamp.mp3?alt=media&token=ec590c1e-6fe4-4665-9bed-e6a8658f57c7
+    Example: the LAMP post is too bright
