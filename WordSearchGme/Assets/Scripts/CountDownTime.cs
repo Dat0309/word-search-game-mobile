@@ -12,13 +12,26 @@ public class CountDownTime : MonoBehaviour
 
     public GameData currentGameData;
     public Text timerText;
-
+    public static CountDownTime instance;
     private float _timeLeft;
     private float _minutes;
     private float _seconds;
     private float _oneSecondDown;
     private bool _timeOut;
     private bool _stopTimer;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -28,12 +41,14 @@ public class CountDownTime : MonoBehaviour
         _timeLeft = currentGameData.selectedBoardData.timeInSeconds;
         _oneSecondDown = _timeLeft - 1f;
 
+        GameEvents.OnDetailWord += StopTimer;
         GameEvents.OnBoardCompleted += StopTimer;
         GameEvents.OnUnlockNextCategory += StopTimer;
     }
 
     private void OnDisable()
     {
+        GameEvents.OnDetailWord -= StopTimer;
         GameEvents.OnBoardCompleted -= StopTimer;
         GameEvents.OnUnlockNextCategory -= StopTimer;
     }
@@ -54,7 +69,8 @@ public class CountDownTime : MonoBehaviour
         {
             _timeLeft -= Time.deltaTime;
         }
-        if(_timeLeft <= _oneSecondDown)
+
+        if (_timeLeft <= _oneSecondDown)
         {
             _oneSecondDown = _timeLeft - 1f;
         }
