@@ -32,7 +32,6 @@ public class WinPopup : MonoBehaviour
     private void ShowWinPopup()
     {
         winPopup.SetActive(true);
-        CountDownTime.instance.StopTimer();
         SoundManager.instance.PlayWinSound();
     }
 
